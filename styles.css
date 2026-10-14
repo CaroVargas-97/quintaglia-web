@@ -722,6 +722,11 @@ a.project { text-decoration:none; color:inherit; }
 .theme-wood .typ-card { padding:clamp(1.4rem,2.5vw,2rem); }
 .theme-wood .typ-card h3 { color:var(--accent); font-size:clamp(1.35rem,2.2vw,1.75rem); }
 .theme-wood .typ-card .typ-from { font-family:var(--sans); font-weight:700; font-size:clamp(1.25rem,1.9vw,1.55rem); letter-spacing:-.01em; color:var(--accent); }
+/* 3DF — misma receta de tipología que WOOD, con el acento cálido */
+.theme-3df .pp-typ h2 { color:var(--accent); }
+.theme-3df .typ-card { padding:clamp(1.4rem,2.5vw,2rem); }
+.theme-3df .typ-card h3 { color:var(--accent); font-size:clamp(1.35rem,2.2vw,1.75rem); }
+.theme-3df .typ-card .typ-from { font-family:var(--sans); font-weight:700; font-size:clamp(1.25rem,1.9vw,1.55rem); letter-spacing:-.01em; color:var(--accent); }
 .theme-wood .pp-specs   { background: var(--nude); }                 /* crema */
 .theme-wood .pp-gal     { background: var(--paper); color: var(--ink); }
 .theme-wood .pp-avail   { background: var(--paper); }
