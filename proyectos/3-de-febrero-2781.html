@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3 de Febrero 2781 — Quintaglia</title>
+  <meta name="description" content="3 de Febrero 2781. Un edificio en esquina en el límite entre Núñez y Belgrano. 13 pisos de diseño contemporáneo, amplitud y materiales que perduran. Un desarrollo de Quintaglia." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css?v=48">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="../index.html" class="nav__logo" aria-label="Quintaglia inicio">
+      <img class="logo-light" src="../assets/logo/logo-light.png" alt="Quintaglia">
+      <img class="logo-dark"  src="../assets/logo/logo-dark.png"  alt="Quintaglia">
+    </a>
+    <div class="nav__menu" id="navMenu">
+      <ul class="nav__links">
+        <li><a href="#ubicacion">Ubicación</a></li>
+        <li><a href="#tipologias">Tipologías</a></li>
+        <li><a href="#disponibilidad">Disponibilidad</a></li>
+        <li><a href="#amenities">Amenities</a></li>
+        <li><a href="../index.html#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <a href="#contacto" class="btn">Consultar</a>
+    </div>
+    <button class="nav__toggle" id="navToggle" aria-label="Menú"><span></span><span></span><span></span></button>
+  </nav>
+
+  <!-- HERO -->
+  <header class="pp-hero" id="top">
+    <div class="pp-hero__bg"><img src="../assets/img/3df-exterior-dusk.jpg" alt="3 de Febrero 2781" id="heroImg"></div>
+    <div class="pp-hero__inner">
+      <span class="eyebrow pp-hero__eyebrow reveal">Un desarrollo Quintaglia</span>
+      <h1 class="reveal d1">3 de Febrero 2781</h1>
+      <p class="pp-hero__loc reveal d1">Núñez · Belgrano — Buenos Aires</p>
+      <div class="pp-hero__stats reveal d2">
+        <div><span class="k">Altura</span><span class="v">13 pisos</span></div>
+        <div><span class="k">Tipologías</span><span class="v">Mono a 4 amb.</span></div>
+        <div><span class="k">Amenities</span><span class="v">Piscina · Solárium</span></div>
+        <div><span class="k">Estado</span><span class="v">En desarrollo</span></div>
+      </div>
+      <div class="pp-hero__ctas reveal d3">
+        <a href="#tipologias" class="btn btn--light">Ver tipologías</a>
+        <a href="#contacto" class="btn btn--light">Consultar</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- INTRO -->
+  <section class="pp-intro">
+    <div class="wrap">
+      <div class="pp-intro__grid">
+        <h2 class="reveal">Espacio que abraza.</h2>
+        <div class="reveal d1">
+          <p class="lead">Un proyecto donde cada detalle trasciende lo constructivo para transformarse en bienestar cotidiano.</p>
+          <p>En 3 de Febrero 2781 la arquitectura se convierte en el punto de partida de una nueva etapa. Un edificio en esquina que abraza la luz, abre sus visuales y crea espacios donde cada metro se siente.</p>
+          <p>Sus 13 pisos elevan la experiencia cotidiana, combinando diseño contemporáneo, amplitud y materiales que perduran. El movimiento de la ciudad queda a pocos pasos, pero puertas adentro se respira calma, equilibrio y bienestar.</p>
+        </div>
+      </div>
+      <figure class="pp-intro__img reveal d2" data-lightbox="../assets/img/amenity-rooftop.jpg">
+        <img src="../assets/img/amenity-rooftop.jpg" alt="Expansión — 3 de Febrero 2781">
+      </figure>
+    </div>
+  </section>
+
+  <!-- UBICACIÓN -->
+  <section class="pp-loc" id="ubicacion">
+    <div class="wrap">
+      <div class="pp-loc__top reveal">
+        <span class="eyebrow">Ubicación</span>
+        <h2>Entre Núñez y Belgrano.</h2>
+        <p class="lead">Ubicado en el límite entre dos barrios icónicos, el proyecto combina el perfil residencial y arbolado de Núñez con la energía comercial y gastronómica de Belgrano. Elegí una categoría y descubrí todo lo que tenés cerca.</p>
+      </div>
+
+      <div data-tabs class="loc-explore reveal d1">
+        <div class="loc-grid">
+          <button class="loc-card active" data-target="l-comercios">
+            <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+            <span class="loc-card__name">Comercios & mercado</span><span class="loc-card__more">Ver cercanos</span>
+          </button>
+          <button class="loc-card" data-target="l-educacion">
+            <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 4 2 9l10 5 10-5-10-5z"/><path d="M6 11v4c0 1.6 2.7 3 6 3s6-1.4 6-3v-4"/></svg>
+            <span class="loc-card__name">Educación</span><span class="loc-card__more">Ver cercanos</span>
+          </button>
+          <button class="loc-card" data-target="l-verdes">
+            <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 3c3 2 5 5 5 8a5 5 0 0 1-10 0c0-3 2-6 5-8z"/><path d="M12 21v-6"/></svg>
+            <span class="loc-card__name">Espacios verdes</span><span class="loc-card__more">Ver cercanos</span>
+          </button>
+          <button class="loc-card" data-target="l-gym">
+            <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M3 9v6M6 7v10M18 7v10M21 9v6M6 12h12"/></svg>
+            <span class="loc-card__name">Gimnasios</span><span class="loc-card__more">Ver cercanos</span>
+          </button>
+          <button class="loc-card" data-target="l-salud">
+            <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M12 8v8M8 12h8"/></svg>
+            <span class="loc-card__name">Centros de salud</span><span class="loc-card__more">Ver cercanos</span>
+          </button>
+          <button class="loc-card" data-target="l-transporte">
+            <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="13" rx="3"/><path d="M5 11h14"/><circle cx="9" cy="14" r="1"/><circle cx="15" cy="14" r="1"/><path d="M8 20l-2 2M16 20l2 2"/></svg>
+            <span class="loc-card__name">Transporte & tren</span><span class="loc-card__more">Ver cercanos</span>
+          </button>
+          <button class="loc-card" data-target="l-cultura">
+            <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M3 9l9-5 9 5"/><path d="M5 9v8M10 9v8M14 9v8M19 9v8"/><path d="M3 20h18"/></svg>
+            <span class="loc-card__name">Cultura & cine</span><span class="loc-card__more">Ver cercanos</span>
+          </button>
+          <button class="loc-card" data-target="l-gastro">
+            <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M7 3v7a2 2 0 0 0 4 0V3M9 10v11"/><path d="M16 3c-1.5 1-2 3-2 5s.5 3 2 3v10"/></svg>
+            <span class="loc-card__name">Gastronomía</span><span class="loc-card__more">Ver cercanos</span>
+          </button>
+        </div>
+
+        <div class="loc-detail">
+          <div class="loc-detail__panels">
+            <div class="tab-panel active" id="l-comercios">
+              <div class="loc-cat__name">Comercios & mercado</div>
+              <p class="loc-cat__sub">Distancias aproximadas a pie</p>
+              <ul class="loc-list">
+                <li><span>Av. Cabildo · corredor comercial</span><span class="dist">~1,1 km</span></li>
+                <li><span>Supermercados y autoservicios de la zona</span><span class="dist">en la zona</span></li>
+                <li><span>Comercios y tiendas de Núñez</span><span class="dist">en la zona</span></li>
+              </ul>
+              <a class="loc-maps" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=supermercados%20y%20comercios%20cerca%20de%203%20de%20Febrero%202781%2C%20N%C3%BA%C3%B1ez%2C%20Buenos%20Aires"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6-5.3-6-10a6 6 0 0 1 12 0c0 4.7-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg> Ver en Google Maps</a>
+            </div>
+            <div class="tab-panel" id="l-educacion">
+              <div class="loc-cat__name">Educación</div>
+              <p class="loc-cat__sub">Distancias aproximadas a pie</p>
+              <ul class="loc-list">
+                <li><span>Colegios y jardines de Núñez y Belgrano</span><span class="dist">en la zona</span></li>
+                <li><span>Institutos y centros de estudio</span><span class="dist">en la zona</span></li>
+                <li><span>Universidad de Belgrano</span><span class="dist">~2,2 km</span></li>
+              </ul>
+              <a class="loc-maps" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=universidades%20y%20colegios%20cerca%20de%203%20de%20Febrero%202781%2C%20N%C3%BA%C3%B1ez%2C%20Buenos%20Aires"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6-5.3-6-10a6 6 0 0 1 12 0c0 4.7-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg> Ver en Google Maps</a>
+            </div>
+            <div class="tab-panel" id="l-verdes">
+              <div class="loc-cat__name">Espacios verdes</div>
+              <p class="loc-cat__sub">Distancias aproximadas a pie</p>
+              <ul class="loc-list">
+                <li><span>Av. del Libertador y sus paseos</span><span class="dist">~650 m</span></li>
+                <li><span>Barrancas de Belgrano</span><span class="dist">~1,5 km</span></li>
+                <li><span>Parque de los Niños · costanera</span><span class="dist">en la zona</span></li>
+              </ul>
+              <a class="loc-maps" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=plazas%20y%20parques%20cerca%20de%203%20de%20Febrero%202781%2C%20N%C3%BA%C3%B1ez%2C%20Buenos%20Aires"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6-5.3-6-10a6 6 0 0 1 12 0c0 4.7-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg> Ver en Google Maps</a>
+            </div>
+            <div class="tab-panel" id="l-gym">
+              <div class="loc-cat__name">Gimnasios</div>
+              <p class="loc-cat__sub">Distancias aproximadas a pie</p>
+              <ul class="loc-list">
+                <li><span>Gimnasios y estudios de Av. Cabildo</span><span class="dist">~1,1 km</span></li>
+                <li><span>Estudios de training de Núñez</span><span class="dist">en la zona</span></li>
+              </ul>
+              <a class="loc-maps" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=gimnasios%20cerca%20de%203%20de%20Febrero%202781%2C%20N%C3%BA%C3%B1ez%2C%20Buenos%20Aires"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6-5.3-6-10a6 6 0 0 1 12 0c0 4.7-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg> Ver en Google Maps</a>
+            </div>
+            <div class="tab-panel" id="l-salud">
+              <div class="loc-cat__name">Centros de salud</div>
+              <p class="loc-cat__sub">Distancias aproximadas a pie</p>
+              <ul class="loc-list">
+                <li><span>Centros médicos y farmacias de Núñez</span><span class="dist">en la zona</span></li>
+                <li><span>Hospital Pirovano</span><span class="dist">~2,3 km</span></li>
+              </ul>
+              <a class="loc-maps" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=centros%20de%20salud%20y%20farmacias%20cerca%20de%203%20de%20Febrero%202781%2C%20N%C3%BA%C3%B1ez%2C%20Buenos%20Aires"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6-5.3-6-10a6 6 0 0 1 12 0c0 4.7-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg> Ver en Google Maps</a>
+            </div>
+            <div class="tab-panel" id="l-transporte">
+              <div class="loc-cat__name">Transporte & tren</div>
+              <p class="loc-cat__sub">Distancias aproximadas a pie</p>
+              <ul class="loc-list">
+                <li><span>Av. del Libertador · colectivos</span><span class="dist">~650 m</span></li>
+                <li><span>Av. Cabildo · colectivos y Subte D</span><span class="dist">~1,1 km</span></li>
+                <li><span>Tren Mitre · estación Núñez / Belgrano C</span><span class="dist">en la zona</span></li>
+              </ul>
+              <a class="loc-maps" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=estaciones%20de%20tren%2C%20subte%20y%20colectivos%20cerca%20de%203%20de%20Febrero%202781%2C%20N%C3%BA%C3%B1ez%2C%20Buenos%20Aires"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6-5.3-6-10a6 6 0 0 1 12 0c0 4.7-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg> Ver en Google Maps</a>
+            </div>
+            <div class="tab-panel" id="l-cultura">
+              <div class="loc-cat__name">Cultura & cine</div>
+              <p class="loc-cat__sub">Distancias aproximadas a pie</p>
+              <ul class="loc-list">
+                <li><span>Cines y espectáculos de Av. Cabildo</span><span class="dist">~1,1 km</span></li>
+                <li><span>Museos y cultura de Belgrano</span><span class="dist">en la zona</span></li>
+              </ul>
+              <a class="loc-maps" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=museos%2C%20teatros%20y%20cines%20cerca%20de%203%20de%20Febrero%202781%2C%20N%C3%BA%C3%B1ez%2C%20Buenos%20Aires"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6-5.3-6-10a6 6 0 0 1 12 0c0 4.7-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg> Ver en Google Maps</a>
+            </div>
+            <div class="tab-panel" id="l-gastro">
+              <div class="loc-cat__name">Gastronomía</div>
+              <p class="loc-cat__sub">Distancias aproximadas a pie</p>
+              <ul class="loc-list">
+                <li><span>Restaurantes y cafés de Av. del Libertador</span><span class="dist">~650 m</span></li>
+                <li><span>Barrio Chino · gastronomía</span><span class="dist">~1,1 km</span></li>
+                <li><span>Polo gastronómico de Av. Cabildo</span><span class="dist">~1,1 km</span></li>
+              </ul>
+              <a class="loc-maps" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=restaurantes%20y%20caf%C3%A9s%20cerca%20de%203%20de%20Febrero%202781%2C%20N%C3%BA%C3%B1ez%2C%20Buenos%20Aires"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6-5.3-6-10a6 6 0 0 1 12 0c0 4.7-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg> Ver en Google Maps</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIPOLOGÍAS -->
+  <section class="pp-typ" id="tipologias">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow reveal">Unidades</span>
+          <h2 class="reveal d1" style="margin-top:1rem; font-size:clamp(2rem,4.4vw,3.4rem)">Tipologías</h2>
+        </div>
+        <p class="reveal d2">Desde monoambientes funcionales hasta amplios departamentos de 3 y 4 ambientes en los pisos superiores.</p>
+      </div>
+
+      <div class="typ-cards reveal">
+        <div class="typ-card">
+          <h3>Monoambiente</h3>
+          <p class="typ-m2">35 a 36 m² · 1.° a 9.° piso</p>
+          <p class="typ-from"><small>Desde</small>U$S 90.000</p>
+          <p class="typ-desc">Unidades compactas y eficientes, con balcón. Ideales para vivir o invertir.</p>
+          <a href="#disponibilidad" class="link-arrow">Ver disponibilidad <span class="ar">→</span></a>
+        </div>
+        <div class="typ-card">
+          <h3>2 Ambientes</h3>
+          <p class="typ-m2">49 a 70 m² · con balcón</p>
+          <p class="typ-from"><small>Desde</small>U$S 132.967</p>
+          <p class="typ-desc">Amplios ambientes con balcón y buenas visuales. Ideales para vivienda.</p>
+          <a href="#disponibilidad" class="link-arrow">Ver disponibilidad <span class="ar">→</span></a>
+        </div>
+        <div class="typ-card">
+          <h3>Semipisos & pisos altos</h3>
+          <p class="typ-m2">100 a 124 m² · 3 y 4 amb.</p>
+          <p class="typ-from"><small>Pisos 10 · 11 · 12</small>Consultar</p>
+          <p class="typ-desc">Unidades exclusivas con grandes expansiones en los niveles superiores.</p>
+          <a href="#contacto" class="link-arrow">Consultar <span class="ar">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DISPONIBILIDAD -->
+  <section class="pp-avail" id="disponibilidad">
+    <div class="wrap">
+      <div class="pp-avail__head reveal">
+        <span class="eyebrow">Disponibilidad</span>
+        <h2>El edificio, piso por piso.</h2>
+        <p>Elegí un piso y una unidad para ver su superficie, estado y valor.</p>
+      </div>
+      <div class="avail reveal d1">
+        <div class="avail__facade">
+          <div class="facade-img">
+            <img src="../assets/img/3df-exterior-frontal.jpg" alt="3 de Febrero 2781">
+            <div class="facade-bands" id="facadeBands"></div>
+          </div>
+          <div class="avail__legend">
+            <span><i class="dot ok"></i>Con disponibles</span>
+            <span><i class="dot res"></i>Reservado</span>
+            <span><i class="dot no"></i>Vendido / no disp.</span>
+          </div>
+        </div>
+        <div class="avail__panel">
+          <p class="avail__step">Paso 1 · Elegí un piso</p>
+          <div class="avail__floors" id="availFloors"></div>
+          <p class="avail__step">Paso 2 · Elegí una unidad</p>
+          <div class="avail__units" id="availUnits"></div>
+          <div class="avail__detail" id="availDetail"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+  (function(){
+    const M={A:{t:'2 ambientes',c:46.16,o:60.12},B:{t:'Monoambiente',c:31.26,o:35.45},C:{t:'Monoambiente',c:31.39,o:35.50},D:{t:'Monoambiente',c:31.41,o:35.51},E:{t:'2 ambientes',c:42.62,o:49.67}};
+    function mk(id,st,price){const b=Object.assign({id},M[id]); b.st=st; if(st==='disp')b.total=price; if(st==='cash')b.cash=price; return b;}
+    const floors=[
+      {n:1,u:[mk('A','disp',160941),mk('B','vendido'),mk('C','disp',95034),mk('D','disp',95060),mk('E','disp',132967)]},
+      {n:2,u:[mk('A','disp',171342),mk('B','vendido'),mk('C','cash',90000),mk('D','vendido'),mk('E','vendido')]},
+      {n:3,u:[mk('A','disp',177354),mk('B','vendido'),mk('C','disp',102950),mk('D','disp',102979),mk('E','disp',144043)]},
+      {n:4,u:[mk('A','disp',183366),mk('B','vendido'),mk('C','disp',106500),mk('D','vendido'),mk('E','disp',149010)]},
+      {n:5,u:[mk('A','vendido'),mk('B','vendido'),mk('C','cash',93000),mk('D','vendido'),mk('E','cash',135000)]},
+      {n:6,u:[mk('A','vendido'),mk('B','vendido'),mk('C','disp',115375),mk('D','vendido'),mk('E','vendido')]},
+      {n:7,u:[mk('A','vendido'),mk('B','disp',116985),mk('C','vendido'),mk('D','vendido'),mk('E','vendido')]},
+      {n:8,u:[mk('A','reservado'),mk('B','disp',118758),mk('C','cash',103000),mk('D','disp',118959),mk('E','disp',166395)]},
+      {n:9,u:[mk('A','vendido'),mk('B','na'),mk('C','na'),mk('D','na'),mk('E','na')]},
+      {n:10,u:[{id:'A',t:'4 ambientes',c:82.44,o:100.61,st:'vendido'},{id:'B',t:'Monoambiente',c:31.23,o:35.34,st:'na'},{id:'C',t:'Monoambiente',c:31.41,o:35.51,st:'na'},{id:'D',t:'2 ambientes',c:42.62,o:49.67,st:'na'}]},
+      {n:11,u:[{id:'A',t:'3 ambientes',c:83.72,o:123.78,st:'na'},{id:'B',t:'2 ambientes',c:54.46,o:74.16,st:'na'}]},
+      {n:12,u:[{id:'A',t:'3 ambientes',c:70.10,o:107.17,st:'na'}]}
+    ];
+    const fmt=n=>'U$S '+Math.round(n).toLocaleString('es-AR');
+    const m2=n=>n.toLocaleString('es-AR',{minimumFractionDigits:2,maximumFractionDigits:2});
+    const avail=u=>u.st==='disp'||u.st==='cash';
+    const floorsEl=document.getElementById('availFloors');
+    const unitsEl=document.getElementById('availUnits');
+    const detEl=document.getElementById('availDetail');
+    let curFloor=null;
+    const bandsEl=document.getElementById('facadeBands');
+    const chipByN={}, bandByN={};
+    const FY={1:[80.9,88.9],2:[74.1,80.9],3:[67.5,74.1],4:[60.7,67.5],5:[54.0,60.7],6:[47.2,54.0],7:[40.4,47.2],8:[33.8,40.4],9:[27.0,33.8],10:[20.3,27.0],11:[16.4,20.3],12:[12.8,16.4]};
+    floors.forEach(f=>{
+      const cnt=f.u.filter(avail).length;
+      const b=document.createElement('button');
+      b.className='floor-chip '+(cnt>0?'has':'none');
+      b.innerHTML='<span class="fn">'+f.n+'°</span><span class="fc">'+(cnt>0?cnt+' disp':'—')+'</span>';
+      b.onclick=()=>selFloor(f);
+      floorsEl.appendChild(b); chipByN[f.n]=b;
+      const band=document.createElement('div');
+      band.className='fband'+(cnt>0?' avail':'');
+      const fy=FY[f.n];
+      band.style.top=(fy[0]+0.6).toFixed(2)+'%';
+      band.style.height=(fy[1]-fy[0]-1.2).toFixed(2)+'%';
+      band.innerHTML='<span class="fband__label">'+f.n+'° · '+(cnt>0?cnt+' disp':'no disp.')+'</span>';
+      band.onclick=()=>selFloor(f);
+      bandsEl.appendChild(band); bandByN[f.n]=band;
+    });
+    function selFloor(f){
+      curFloor=f;
+      Object.values(chipByN).forEach(c=>c.classList.remove('active'));
+      Object.values(bandByN).forEach(c=>c.classList.remove('on'));
+      chipByN[f.n].classList.add('active');
+      bandByN[f.n].classList.add('on');
+      unitsEl.innerHTML=''; detEl.innerHTML='';
+      f.u.forEach(u=>{
+        let cls='unit-chip ';
+        if(avail(u))cls+='ok'; else if(u.st==='reservado')cls+='res'; else if(u.st==='vendido')cls+='sold'; else cls+='na';
+        const stTxt=avail(u)?'Disponible':(u.st==='reservado'?'Reservado':u.st==='vendido'?'Vendido':'No disp.');
+        const b=document.createElement('button');
+        b.className=cls;
+        b.innerHTML='<span class="ul">'+u.id+'</span><span class="ut">'+u.t+'</span><span class="us">'+stTxt+'</span>';
+        if(avail(u)) b.onclick=()=>selUnit(u,b);
+        unitsEl.appendChild(b);
+      });
+      detEl.innerHTML = f.u.some(avail)
+        ? '<p class="avail__empty">Elegí una unidad para ver su valor.</p>'
+        : '<p class="avail__empty">No hay unidades disponibles en este piso. Consultanos por otras opciones.</p>';
+    }
+    function selUnit(u,btn){
+      [...unitsEl.children].forEach(c=>c.classList.remove('active'));
+      btn.classList.add('active');
+      let price='';
+      if(u.st==='disp'){
+        const ant=Math.round(u.total*0.30), cuota=Math.round(u.total*0.70/24);
+        price='<div class="ad-fin"><div class="lbl">Financiado · 30% anticipo + 24 cuotas</div><div class="big">'+fmt(u.total)+'</div><div class="ad-row"><span>Anticipo (30%)</span><span>'+fmt(ant)+'</span></div><div class="ad-row"><span>24 cuotas de</span><span>'+fmt(cuota)+'</span></div></div>';
+      } else if(u.st==='cash'){
+        price='<div class="ad-cash"><div class="lbl">Contado · 100% adelantado</div><div class="big">'+fmt(u.cash)+'</div></div>';
+      }
+      detEl.innerHTML='<div class="ad-card"><div class="ad-head"><h4>'+curFloor.n+'° · '+u.id+' — '+u.t+'</h4><span class="ad-m2">'+m2(u.c)+' m² cub · '+m2(u.o)+' m² tot</span></div>'+price+'<a class="btn btn--solid" href="#contacto">Consultar esta unidad</a><p class="ad-note">Valores de lista orientativos, sujetos a modificación. Consultá condiciones vigentes.</p></div>';
+    }
+    const firstHas=floors.find(f=>f.u.filter(avail).length>0);
+    if(firstHas) selFloor(firstHas);
+  })();
+  </script>
+
+  <!-- GALERÍA -->
+  <section class="pp-gal">
+    <div class="wrap">
+      <div class="pp-gal__head">
+        <span class="eyebrow reveal">Diseño que respira</span>
+        <h2 class="reveal d1">Espacios que se sienten.</h2>
+      </div>
+      <div class="pp-grid reveal">
+        <figure class="s8" data-lightbox="../assets/img/interior-living-02.jpg"><img src="../assets/img/interior-living-02.jpg" alt="Living con vista"></figure>
+        <figure class="s4" data-lightbox="../assets/img/interior-02.jpg"><img src="../assets/img/interior-02.jpg" alt="Dormitorio"></figure>
+        <figure class="s4" data-lightbox="../assets/img/exterior-02.jpg"><img src="../assets/img/exterior-02.jpg" alt="Cocina"></figure>
+        <figure class="s4" data-lightbox="../assets/img/bano.jpg"><img src="../assets/img/bano.jpg" alt="Baño"></figure>
+        <figure class="s4" data-lightbox="../assets/img/interior-03.jpg"><img src="../assets/img/interior-03.jpg" alt="Terraza"></figure>
+        <figure class="s12" data-lightbox="../assets/img/interior-01.jpg"><img src="../assets/img/interior-01.jpg" alt="Living comedor con vista"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- AMENITIES -->
+  <section class="pp-amen" id="amenities">
+    <div class="wrap">
+      <div class="pp-amen__head">
+        <span class="eyebrow reveal">Espacios comunes</span>
+        <h2 class="reveal d1">Amenities pensados para disfrutar.</h2>
+      </div>
+      <div class="pp-amen__grid">
+        <div class="pp-amen__feat reveal"><h3>Piscina & Solárium</h3><p>En la azotea, con vistas abiertas a la ciudad para disfrutar todo el año.</p></div>
+        <div class="pp-amen__feat reveal d1"><h3>Parrilla</h3><p>Espacio de parrillas integrado a un entorno verde y relajado.</p></div>
+        <div class="pp-amen__feat reveal d2"><h3>Laundry</h3><p>Área de lavado común, pensada para la comodidad cotidiana.</p></div>
+        <div class="pp-amen__feat reveal d3"><h3>Cocheras</h3><p>Cocheras cubiertas en planta baja y subsuelo.</p></div>
+      </div>
+      <div class="pp-amen__media reveal d1">
+        <figure data-lightbox="../assets/img/3df-pileta.jpg?2"><img src="../assets/img/3df-pileta.jpg?2" alt="Piscina en azotea"></figure>
+        <figure data-lightbox="../assets/img/3df-parrilla.jpg?2"><img src="../assets/img/3df-parrilla.jpg?2" alt="Parrilla con vista"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEMORIA DESCRIPTIVA -->
+  <section class="pp-specs">
+    <div class="wrap">
+      <span class="eyebrow reveal">La calidad en los detalles</span>
+      <h2 class="reveal d1" style="margin-top:1rem; font-size:clamp(2rem,4.4vw,3.2rem)">Memoria descriptiva.</h2>
+      <div class="pp-specs__grid">
+        <div class="spec-block reveal"><h4>Cocina</h4><p>Anafe eléctrico y horno. Muebles bajo mesada enchapados en melamina. Preparadas para instalar purificador.</p></div>
+        <div class="spec-block reveal"><h4>Revestimientos y mesadas</h4><p>Baños en cerámica o porcelanato, con receptáculo de ducha. Mesadas de mármol en baños y Silestone en cocina.</p></div>
+        <div class="spec-block reveal"><h4>Carpinterías</h4><p>Exteriores en PVC con DVH y vidrios laminados hasta el piso. Puertas interiores de madera. Placares con frentes espejados o enchapados.</p></div>
+        <div class="spec-block reveal"><h4>Climatización</h4><p>Preparación para Split o Multisplit en ambientes principales. Piso radiante Eurocable. Agua caliente central.</p></div>
+        <div class="spec-block reveal"><h4>Solados</h4><p>Baños, cocinas y balcones en porcelanato de primera calidad. Living y dormitorios en vinílico Patagonia o porcelanato.</p></div>
+        <div class="spec-block reveal"><h4>Ascensor</h4><p>Automático, revestido en acero inoxidable y espejo, con puertas telescópicas y piso de granito en palier.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERIORISMO -->
+  <section class="pp-interior">
+    <div class="wrap pp-interior__grid">
+      <div class="reveal">
+        <span class="eyebrow">Experiencia / Wilson Tobal</span>
+        <h2>Tu casa, completa antes de mudarte.</h2>
+        <p>Posibilidad de adquirir la unidad con el paquete completo de interiorismo de la firma Wilson Tobal: diseño, funcionalidad y texturas pensadas para que tu hogar esté listo desde el primer día.</p>
+      </div>
+      <div class="pp-interior__media reveal d1"><img src="../assets/img/exterior-01.jpg" alt="Interiorismo Wilson Tobal"></div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="pp-cta" id="contacto">
+    <div class="wrap">
+      <span class="eyebrow reveal">Hablemos</span>
+      <h2 class="reveal d1" style="margin-top:1rem">Conocé 3 de Febrero 2781.</h2>
+      <p class="reveal d2" style="max-width:46ch;margin:0 auto;color:#c9c4bc">Dejanos tu consulta y te contactamos con disponibilidad, precios y formas de pago.</p>
+      <div class="pp-cta__btns reveal d2">
+        <a href="https://wa.me/5491100000000" target="_blank" rel="noopener" class="btn btn--light">WhatsApp</a>
+        <a href="../index.html#contacto" class="btn btn--light">Formulario de contacto</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img src="../assets/logo/logo-light.png" alt="Quintaglia">
+          <p>Desarrollos inmobiliarios que trascienden lo constructivo para transformarse en bienestar cotidiano.</p>
+          <p class="tag">Scrivendo il futuro</p>
+        </div>
+        <div class="footer__col">
+          <h4>Proyecto</h4>
+          <ul>
+            <li><a href="#ubicacion">Ubicación</a></li>
+            <li><a href="#tipologias">Tipologías</a></li>
+            <li><a href="#amenities">Amenities</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Quintaglia</h4>
+          <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../index.html#proyectos">Proyectos</a></li>
+            <li><a href="mailto:info@quintaglia.com">info@quintaglia.com</a></li>
+            <li><a href="https://instagram.com" target="_blank" rel="noopener">@quintaglia</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© <span id="year"></span> Quintaglia Desarrollos Inmobiliarios. Arquitectura: 2PS Parysow + Schargrodsky.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox"><img src="" alt=""></div>
+  <script src="../script.js?v=48"></script>
+</body>
+</html>
