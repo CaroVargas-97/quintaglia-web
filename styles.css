@@ -854,6 +854,7 @@ a.project { text-decoration:none; color:inherit; }
 .theme-wood .floor-chip .fn { font-family:var(--sans); font-weight:700; letter-spacing:0; }
 .theme-wood .floor-chip .fc { font-family:var(--sans); }
 .theme-wood .ad-fin .big, .theme-wood .ad-cash .big { font-family:var(--sans); font-weight:700; letter-spacing:0; }
+.theme-3df .ad-fin .big, .theme-3df .ad-cash .big { font-family:var(--sans); font-weight:700; letter-spacing:0; }
 .theme-wood .ad-fin { background:#40584a; }
 .theme-wood .ad-card .btn--solid { background:#40584a; color:#fff; border-color:#40584a; width:100%; justify-content:center; }
 .theme-wood .ad-card .btn--solid::after { background:#2f4234; }
