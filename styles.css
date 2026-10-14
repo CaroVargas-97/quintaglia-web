@@ -564,8 +564,8 @@ a.project { text-decoration:none; color:inherit; }
 
 /* Tipologías en tarjetas (sin planta) */
 .typ-cards { display:grid; grid-template-columns:repeat(3,1fr); gap:clamp(1rem,2vw,1.6rem); }
-.typ-card { border:1px solid var(--line); border-radius:4px; padding:clamp(1.6rem,3vw,2.4rem); background:var(--white); transition:transform .5s var(--ease), box-shadow .5s var(--ease); }
-.typ-card:hover { transform:translateY(-4px); box-shadow:0 24px 60px rgba(30,30,30,.08); }
+.typ-card { border:1px solid rgba(30,30,30,.05); border-radius:4px; padding:clamp(1.6rem,3vw,2.4rem); background:var(--white); box-shadow:0 14px 40px rgba(30,30,30,.06); transition:transform .5s var(--ease), box-shadow .5s var(--ease); }
+.typ-card:hover { transform:translateY(-4px); box-shadow:0 24px 60px rgba(30,30,30,.1); }
 .typ-card .cat { font-size:.68rem; letter-spacing:.2em; text-transform:uppercase; color:var(--accent); }
 .typ-card h3 { font-size:clamp(1.6rem,2.6vw,2.1rem); margin:.5rem 0 1.1rem; }
 .typ-card ul { list-style:none; display:grid; gap:.7rem; }
@@ -631,7 +631,7 @@ a.project { text-decoration:none; color:inherit; }
    TIPOLOGÍAS — tarjetas con precio DESDE
 =========================================================== */
 .typ-card .typ-m2 { color:var(--accent); font-size:.95rem; margin-bottom:.2rem; }
-.typ-card .typ-from { font-family:var(--serif); font-size:clamp(1.8rem,3vw,2.3rem); color:var(--ink); margin:.8rem 0 1rem; line-height:1.1; }
+.typ-card .typ-from { font-family:var(--serif); font-size:clamp(1.8rem,3vw,2.3rem); color:var(--ink); margin:.8rem 0 1.4rem; padding-bottom:1.4rem; border-bottom:1px solid var(--line); line-height:1.1; }
 .typ-card .typ-from small { display:block; font-family:var(--sans); font-size:.6rem; letter-spacing:.24em; text-transform:uppercase; color:var(--accent); margin-bottom:.2rem; }
 .typ-card .typ-desc { font-size:.92rem; color:#3c3a36; margin-bottom:1.4rem; min-height:3.2em; }
 .typ-card .link-arrow { color:var(--ink); }
