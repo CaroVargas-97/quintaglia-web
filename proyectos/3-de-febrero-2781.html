@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="../assets/logo/mono-dark.png">
   <link rel="apple-touch-icon" href="../assets/logo/mono-dark.png">
-  <link rel="stylesheet" href="../styles.css?v=54">
+  <link rel="stylesheet" href="../styles.css?v=56">
 </head>
 <body>
 
@@ -116,7 +116,9 @@
           </button>
         </div>
 
-        <div class="loc-detail">
+        <div class="loc-modal" id="locModal">
+          <div class="loc-modal__inner">
+            <button class="loc-modal__x" id="locModalX" aria-label="Cerrar">&times;</button>
           <div class="loc-detail__panels">
             <div class="tab-panel active" id="l-comercios">
               <div class="loc-cat__name">Comercios & mercado</div>
@@ -195,6 +197,7 @@
               </ul>
               <a class="loc-maps" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=restaurantes%20y%20caf%C3%A9s%20cerca%20de%203%20de%20Febrero%202781%2C%20N%C3%BA%C3%B1ez%2C%20Buenos%20Aires"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6-5.3-6-10a6 6 0 0 1 12 0c0 4.7-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg> Ver en Google Maps</a>
             </div>
+          </div>
           </div>
         </div>
       </div>
@@ -289,6 +292,8 @@
     const fmt=n=>'U$S '+Math.round(n).toLocaleString('es-AR');
     const m2=n=>n.toLocaleString('es-AR',{minimumFractionDigits:2,maximumFractionDigits:2});
     const avail=u=>u.st==='disp'||u.st==='cash';
+    function planKey(n,id,t){ if(t==='Monoambiente')return 'mono'; if(n===10&&t==='4 ambientes')return '10'; if(n===11)return 'ph11'; if(n===12)return 'ph12'; if(id==='A')return '1A'; return '2amb'; }
+    const planFor=(n,id,t)=>'../assets/plans/3df-plan-'+planKey(n,id,t)+'.png';
     const floorsEl=document.getElementById('availFloors');
     const unitsEl=document.getElementById('availUnits');
     const detEl=document.getElementById('availDetail');
@@ -343,7 +348,13 @@
       } else if(u.st==='cash'){
         price='<div class="ad-cash"><div class="lbl">Contado · 100% adelantado</div><div class="big">'+fmt(u.cash)+'</div></div>';
       }
-      detEl.innerHTML='<div class="ad-card"><div class="ad-head"><h4>'+curFloor.n+'° · '+u.id+' — '+u.t+'</h4><span class="ad-m2">'+m2(u.c)+' m² cub · '+m2(u.o)+' m² tot</span></div>'+price+'<a class="btn btn--solid" href="#contacto">Consultar esta unidad</a><p class="ad-note">Valores de lista orientativos, sujetos a modificación. Consultá condiciones vigentes.</p></div>';
+      const plan=planFor(curFloor.n,u.id,u.t);
+      detEl.innerHTML='<a class="ad-planlink" data-plan="'+plan+'"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M4 9h16M10 9v12"/></svg> Ver planta de la unidad</a>'
+        +'<div class="ad-card"><div class="ad-head"><div><h4>'+curFloor.n+'° · '+u.id+'</h4><span class="ad-sub">'+u.t+'</span></div><span class="ad-m2">'+m2(u.c)+' m² cub<br>'+m2(u.o)+' m² tot</span></div>'
+        +'<div class="ad-body"><a class="ad-plan" data-plan="'+plan+'"><img src="'+plan+'" alt="Planta de la unidad"><span>Planta · ampliar</span></a><div class="ad-prices">'+price+'</div></div>'
+        +'<a class="btn btn--solid ad-consult" href="#contacto">Consultar esta unidad</a>'
+        +'<p class="ad-note">Valores de lista orientativos, sujetos a modificación. Consultá condiciones vigentes.</p></div>';
+      detEl.querySelectorAll('[data-plan]').forEach(el=>el.addEventListener('click',()=>{ const lb=document.getElementById('lightbox'); if(lb){ lb.querySelector('img').src=el.getAttribute('data-plan'); lb.classList.add('open'); } }));
     }
     const firstHas=floors.find(f=>f.u.filter(avail).length>0);
     if(firstHas) selFloor(firstHas);
@@ -464,6 +475,6 @@
   </footer>
 
   <div class="lightbox" id="lightbox"><img src="" alt=""></div>
-  <script src="../script.js?v=54"></script>
+  <script src="../script.js?v=56"></script>
 </body>
 </html>
