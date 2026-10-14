@@ -832,27 +832,6 @@ a.project { text-decoration:none; color:inherit; }
 /* Tipologías — nota al pie */
 .pp-typ__foot { margin-top:clamp(2rem,4vw,3rem); font-size:.88rem; color:var(--accent); }
 
-/* Disponibilidad — toggle Fachada / Lista de precios */
-.avail-toggle { display:flex; width:fit-content; margin:clamp(1.4rem,3vw,2.2rem) auto clamp(1.6rem,3vw,2.6rem); border:1px solid var(--line); border-radius:999px; padding:4px; background:var(--white); }
-.avail-toggle button { font-family:var(--sans); font-size:.72rem; font-weight:500; letter-spacing:.06em; color:var(--accent); background:none; border:0; padding:.7em 1.6em; border-radius:999px; cursor:pointer; transition:background .25s var(--ease), color .25s var(--ease); }
-.avail-toggle button.on { background:var(--accent); color:#fff; }
-
-/* Lista de precios (tabla) */
-.pricetab-wrap { overflow-x:auto; }
-.pricetab { width:100%; border-collapse:collapse; font-family:var(--sans); }
-.pricetab th { font-size:.62rem; letter-spacing:.14em; text-transform:uppercase; color:var(--accent); font-weight:600; text-align:left; padding:.95em 1em; border-bottom:1px solid var(--line); white-space:nowrap; }
-.pricetab th.srt { cursor:pointer; user-select:none; } .pricetab th.srt:hover { color:var(--ink); }
-.pricetab th .ar { opacity:.6; font-size:.7em; margin-left:.3em; }
-.pricetab td { padding:1em; border-bottom:1px solid var(--line); font-size:.95rem; color:var(--ink); }
-.pricetab tbody tr.av:hover { background:rgba(64,88,74,.05); }
-.pricetab tr.na td { color:#9a9a92; }
-.pricetab .wl-piso, .pricetab .wl-pr { font-weight:600; white-space:nowrap; }
-.pricetab .wl-st { display:inline-flex; align-items:center; gap:.5em; font-size:.82rem; font-weight:600; white-space:nowrap; }
-.pricetab .wl-st::before { content:""; width:7px; height:7px; border-radius:50%; background:currentColor; }
-.pricetab .wl-st.ok { color:#40584a; } .pricetab .wl-st.sold { color:#9a6a66; }
-.pricetab .wl-ver { background:none; border:0; color:var(--accent); font-family:var(--sans); font-size:.82rem; font-weight:600; cursor:pointer; white-space:nowrap; }
-.pricetab .wl-ver:hover { text-decoration:underline; }
-
 /* WOOD — disponibilidad idéntica a la referencia */
 .theme-wood .fband { left:26.5%; width:30%; }
 .theme-wood .avail__floors { grid-template-columns:repeat(9,1fr); gap:.4rem; }
