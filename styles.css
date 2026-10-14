@@ -563,7 +563,7 @@ a.project { text-decoration:none; color:inherit; }
 }
 
 /* Tipologías en tarjetas (sin planta) */
-.typ-cards { display:grid; grid-template-columns:repeat(2,1fr); gap:clamp(1rem,2vw,1.6rem); }
+.typ-cards { display:grid; grid-template-columns:repeat(3,1fr); gap:clamp(1rem,2vw,1.6rem); }
 .typ-card { border:1px solid var(--line); border-radius:4px; padding:clamp(1.6rem,3vw,2.4rem); background:var(--white); transition:transform .5s var(--ease), box-shadow .5s var(--ease); }
 .typ-card:hover { transform:translateY(-4px); box-shadow:0 24px 60px rgba(30,30,30,.08); }
 .typ-card .cat { font-size:.68rem; letter-spacing:.2em; text-transform:uppercase; color:var(--accent); }
