@@ -717,6 +717,8 @@ a.project { text-decoration:none; color:inherit; }
 /* Fondos de sección según la referencia */
 .theme-wood .pp-intro   { background: var(--nude); }                 /* crema */
 .theme-wood .pp-typ     { background: var(--nude); }                 /* crema */
+/* WOOD — precio de tipología en sans bold (igual a la referencia) */
+.theme-wood .typ-card .typ-from { font-family:var(--sans); font-weight:700; font-size:clamp(1.4rem,2.3vw,1.8rem); letter-spacing:-.01em; }
 .theme-wood .pp-specs   { background: var(--nude); }                 /* crema */
 .theme-wood .pp-gal     { background: var(--paper); color: var(--ink); }
 .theme-wood .pp-avail   { background: var(--paper); }
