@@ -718,6 +718,7 @@ a.project { text-decoration:none; color:inherit; }
 .theme-wood .pp-intro   { background: var(--nude); }                 /* crema */
 .theme-wood .pp-typ     { background: var(--nude); }                 /* crema */
 /* WOOD — tipología igual a la referencia: destacados en verde + escala compacta */
+.theme-wood .pp-typ h2 { color:var(--accent); }
 .theme-wood .typ-card { padding:clamp(1.4rem,2.5vw,2rem); }
 .theme-wood .typ-card h3 { color:var(--accent); font-size:clamp(1.35rem,2.2vw,1.75rem); }
 .theme-wood .typ-card .typ-from { font-family:var(--sans); font-weight:700; font-size:clamp(1.25rem,1.9vw,1.55rem); letter-spacing:-.01em; color:var(--accent); }
