@@ -873,3 +873,32 @@ a.project { text-decoration:none; color:inherit; }
 .theme-wood .ad-plan img { background:#40594a; }
 .theme-wood .ad-plan span { color:#fff; background:#40594a; border-top-color:rgba(255,255,255,.22); }
 @media (max-width:620px){ .ad-body{ grid-template-columns:1fr; } .theme-wood .avail__floors{ grid-template-columns:repeat(5,1fr);} }
+
+/* =======================================================================
+   === FUENTES DE MARCA (PENDIENTE) ===
+   Inicio + 3 de Febrero → Harume Roman (títulos) + Neue Montreal (cuerpo).
+   Inactivo hasta tener los archivos con licencia web/comercial.
+   Para activar: copiar los archivos en assets/fonts/, descomentar TODO
+   este bloque, ajustar nombres si difieren y subir ?v=N en las 3 páginas.
+   Requiere class="theme-brand" en el <body> de index.html (ya agregada).
+   ----------------------------------------------------------------------
+@font-face {
+  font-family: "Harume Roman";
+  src: url("assets/fonts/HarumeRoman.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("assets/fonts/NeueMontreal-Regular.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("assets/fonts/NeueMontreal-Medium.woff2") format("woff2");
+  font-weight: 500; font-style: normal; font-display: swap;
+}
+.theme-brand, .theme-3df {
+  --serif: "Harume Roman", "Cormorant Garamond", "Times New Roman", serif;
+  --sans:  "Neue Montreal", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+   ======================================================================= */

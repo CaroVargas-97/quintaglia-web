@@ -77,6 +77,7 @@ Bloque `.theme-wood` en `styles.css` con la paleta verde:
 - [ ] Revisar/confirmar el resto de WOOD contra la referencia (secciones que falten pulir).
 - [ ] Definir si el home y 3DF necesitan más pasadas de diseño/contenido.
 - [ ] Evaluar automatizar el cache-busting (hoy es manual con `?v=N`).
+- [ ] **Fuentes de marca** (inicio + 3DF): cambiar a **Harume Roman** (títulos) + **Neue Montreal** (cuerpo) del manual. Son de pago (requieren licencia **webfont/comercial**). Andamiaje listo y comentado en `styles.css` (`=== FUENTES DE MARCA (PENDIENTE) ===`) + `assets/fonts/README.md`. Falta: conseguir los archivos con licencia y activar el bloque.
 
 ## Git
 
