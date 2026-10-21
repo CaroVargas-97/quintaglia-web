@@ -10,7 +10,7 @@ Sitio de **Quintaglia Desarrollos Inmobiliarios** (Buenos Aires). Home de marca 
   python3 -m http.server 8777
   ```
   Luego abrir `http://localhost:8777/`.
-- **Cache-busting manual**: los links a `styles.css` y `script.js` llevan `?v=N`. Al cambiar CSS/JS hay que subir ese número en las 3 páginas. Versión actual: **v64**.
+- **Cache-busting manual**: los links a `styles.css` y `script.js` llevan `?v=N`. Al cambiar CSS/JS hay que subir ese número en las 3 páginas. Versión actual: **v65**.
   ```bash
   perl -0pi -e 's{styles\.css\?v=\d+}{styles.css?v=NN}g; s{script\.js\?v=\d+}{script.js?v=NN}g' index.html proyectos/3-de-febrero-2781.html proyectos/wood-recoleta.html
   ```
@@ -79,8 +79,8 @@ Bloque `.theme-wood` en `styles.css` con la paleta verde:
 - [ ] Evaluar automatizar el cache-busting (hoy es manual con `?v=N`).
 - [ ] **Fuentes de marca** (inicio + 3DF): objetivo del manual = **Harume Roman** (títulos) + **Neue Montreal** (cuerpo). **Estado actual** (bloque `=== FUENTES INTERINAS ===` en `styles.css`, `.theme-brand`/`.theme-3df`):
   - Títulos → **Harume Roman** real (`assets/fonts/HarumeRoman.woff2`, `@font-face`) con **Italiana de respaldo por-glifo** para los caracteres que Harume NO tiene (á é í ó ú ñ ¿ ¡). Por eso en "Núñez"/"Ubicación" la ú/ñ/ó se ven en otra letra (mezcla aceptada).
-  - Cuerpo → **Hanken Grotesk** (≈ Neue Montreal, Google Fonts).
-  - ⚠️ El `HarumeRoman.woff2` subido es la versión **free (uso personal, 130 glifos, sin acentos)**. Falta: **Harume full** (US$19 Gumroad → acentos + licencia comercial; reemplaza el archivo y se quita Italiana del stack) y **Neue Montreal** con licencia web. Ver `assets/fonts/README.md` y el bloque comentado `=== FUENTES DE MARCA (PENDIENTE) ===`.
+  - Cuerpo → **Neue Montreal** real (`assets/fonts/NeueMontreal-{Light,Regular,Semibold}.woff2`, `@font-face` 300/400/600). Versión free pero **completa (1041 glifos, con acentos/ñ)**: el cuerpo NO tiene mezcla. Hanken Grotesk / Inter quedan solo de fallback.
+  - ⚠️ Ambas fuentes subidas son **"free for personal use"**. Para el sitio en vivo falta la **licencia comercial/webfont**: Harume full (US$19 Gumroad → además agrega acentos y quita la mezcla con Italiana) y Neue Montreal (Pangram Pangram, licencia web). Ver `assets/fonts/README.md`.
 
 ## Git
 
