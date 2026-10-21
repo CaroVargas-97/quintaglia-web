@@ -915,7 +915,7 @@ a.project { text-decoration:none; color:inherit; }
 .theme-brand h1, .theme-3df h1 {
   font-family: "Harume Roman", "Italiana", "Cormorant Garamond", "Times New Roman", serif;
   text-transform: uppercase;
-  letter-spacing: .18em;
+  letter-spacing: .1em;
 }
 /* Títulos de sección (h2/h3/h4): Marcellus limpio (legible y delicado), con
    solo la PRIMERA LETRA en Harume como guiño de marca. La Harume fuerte queda
@@ -941,7 +941,7 @@ a.project { text-decoration:none; color:inherit; }
 .hero--home h1 {
   font-family: "Harume Roman", "Italiana", serif;
   text-transform: uppercase; font-weight: 400;
-  font-size: clamp(1.7rem, 3.6vw, 3rem); line-height: 1.2; letter-spacing: .18em;
+  font-size: clamp(1.7rem, 3.6vw, 3rem); line-height: 1.04; letter-spacing: .1em;
 }
 .hero--home .pp-hero__loc {
   font-family: "Cormorant Garamond", "Times New Roman", serif;
