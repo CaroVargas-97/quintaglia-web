@@ -917,14 +917,16 @@ a.project { text-decoration:none; color:inherit; }
   text-transform: uppercase;
   letter-spacing: .05em;
 }
-/* Títulos de sección (h2/h3/h4): Marcellus, con la PRIMERA PALABRA en Harume
-   (span .hw). Gesto de marca al arranque, sin recargar el resto. */
+/* Títulos de sección (h2/h3/h4): Marcellus, con la PRIMERA LETRA en Harume
+   (::first-letter). Gesto de marca al arranque, sin recargar el resto. */
 .theme-brand h2, .theme-brand h3, .theme-brand h4,
 .theme-3df h2, .theme-3df h3, .theme-3df h4 {
   font-family: var(--serif); font-weight: 400; letter-spacing: 0; text-transform: none;
 }
-/* Primera palabra del título en Harume (mayúscula); el resto en Marcellus. */
-.theme-brand .hw, .theme-3df .hw { font-family: "Harume Roman", "Italiana", serif; font-style: normal; text-transform: uppercase; letter-spacing: .02em; }
+.theme-brand h2::first-letter, .theme-brand h3::first-letter, .theme-brand h4::first-letter,
+.theme-3df h2::first-letter, .theme-3df h3::first-letter, .theme-3df h4::first-letter {
+  font-family: "Harume Roman", "Italiana", serif;
+}
 /* Acento sutil en títulos: una palabra en Cormorant itálica (la única cursiva de
    acento del sitio, la misma de "Scrivendo il futuro"). */
 .theme-brand h2 em, .theme-brand h3 em,
@@ -932,13 +934,14 @@ a.project { text-decoration:none; color:inherit; }
   font-family: "Cormorant Garamond", "Times New Roman", serif;
   font-style: italic; font-weight: 500; color: var(--accent);
 }
-/* Hero de la home: Marcellus con la primera palabra en Harume (como los títulos).
+/* Hero de la home: Marcellus con la primera letra en Harume (como los títulos).
    "Scrivendo il futuro" en Cormorant itálica. */
 .hero--home h1 {
   font-family: "Marcellus", "Italiana", "Cormorant Garamond", serif;
   text-transform: none; font-weight: 400;
   font-size: clamp(1.9rem, 4vw, 3.4rem); line-height: 1.08; letter-spacing: 0;
 }
+.hero--home h1::first-letter { font-family: "Harume Roman", "Italiana", serif; }
 .hero--home .pp-hero__loc {
   font-family: "Cormorant Garamond", "Times New Roman", serif;
   font-style: italic;
