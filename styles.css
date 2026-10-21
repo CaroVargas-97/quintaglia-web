@@ -931,8 +931,9 @@ a.project { text-decoration:none; color:inherit; }
   font-family: "Cormorant Garamond", "Times New Roman", serif;
   font-style: italic; font-weight: 500; color: var(--accent);
 }
-/* Hero de la home: Harume mayúscula (como el hero de 3DF), hereda tamaño de
-   .pp-hero h1. "Scrivendo il futuro" va en Cormorant itálica. */
+/* Hero de la home: Harume mayúscula (como 3DF), pero más chico porque la frase
+   es larga (el de 3DF es un título corto). "Scrivendo il futuro" en Cormorant. */
+.hero--home h1 { font-size: clamp(2rem, 4.6vw, 4rem); line-height: 1.04; letter-spacing: .03em; }
 .hero--home .pp-hero__loc {
   font-family: "Cormorant Garamond", "Times New Roman", serif;
   font-style: italic;
