@@ -10,7 +10,7 @@ Sitio de **Quintaglia Desarrollos Inmobiliarios** (Buenos Aires). Home de marca 
   python3 -m http.server 8777
   ```
   Luego abrir `http://localhost:8777/`.
-- **Cache-busting manual**: los links a `styles.css` y `script.js` llevan `?v=N`. Al cambiar CSS/JS hay que subir ese número en las 3 páginas. Versión actual: **v69**.
+- **Cache-busting manual**: los links a `styles.css` y `script.js` llevan `?v=N`. Al cambiar CSS/JS hay que subir ese número en las 3 páginas. Versión actual: **v70**.
   ```bash
   perl -0pi -e 's{styles\.css\?v=\d+}{styles.css?v=NN}g; s{script\.js\?v=\d+}{script.js?v=NN}g' index.html proyectos/3-de-febrero-2781.html proyectos/wood-recoleta.html
   ```

@@ -917,6 +917,13 @@ a.project { text-decoration:none; color:inherit; }
   text-transform: uppercase;
   letter-spacing: .05em;
 }
+/* Títulos de sección (h2/h3/h4) en Neue Montreal, la sans del manual
+   (may/minúscula, con acentos). Reemplaza a Italiana por decisión de marca. */
+.theme-brand h2, .theme-brand h3, .theme-brand h4,
+.theme-3df h2, .theme-3df h3, .theme-3df h4 { font-family: var(--sans); font-weight: 400; letter-spacing: -.015em; }
+/* Hero de la home: el título es una frase larga, lo contenemos para que no
+   tape toda la pantalla (el de 3DF es un nombre corto). */
+.hero--home h1 { font-size: clamp(2.3rem, 5.2vw, 4.4rem); line-height: 1.02; }
 
 /* =======================================================================
    === FUENTES DE MARCA (PENDIENTE) ===
