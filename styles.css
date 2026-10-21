@@ -917,19 +917,15 @@ a.project { text-decoration:none; color:inherit; }
   text-transform: uppercase;
   letter-spacing: .18em;
 }
-/* Títulos de sección (h2) del inicio y de 3DF: ENTEROS en Harume mayúscula
-   (gesto de marca pedido por la clienta). */
-.theme-brand h2, .theme-3df h2 {
-  font-family: "Harume Roman", "Italiana", serif; font-weight: 400;
-  text-transform: uppercase; letter-spacing: .18em; line-height: 1.22;
-}
-/* Subtítulos de tarjeta (h3/h4): Marcellus con la PRIMERA LETRA en Harume. */
-.theme-brand h3, .theme-brand h4,
-.theme-3df h3, .theme-3df h4 {
+/* Títulos de sección (h2/h3/h4): Marcellus limpio (legible y delicado), con
+   solo la PRIMERA LETRA en Harume como guiño de marca. La Harume fuerte queda
+   reservada a los heros. */
+.theme-brand h2, .theme-brand h3, .theme-brand h4,
+.theme-3df h2, .theme-3df h3, .theme-3df h4 {
   font-family: var(--serif); font-weight: 400; letter-spacing: 0; text-transform: none;
 }
-.theme-brand h3::first-letter, .theme-brand h4::first-letter,
-.theme-3df h3::first-letter, .theme-3df h4::first-letter {
+.theme-brand h2::first-letter, .theme-brand h3::first-letter, .theme-brand h4::first-letter,
+.theme-3df h2::first-letter, .theme-3df h3::first-letter, .theme-3df h4::first-letter {
   font-family: "Harume Roman", "Italiana", serif;
 }
 /* Acento sutil en títulos: una palabra en Cormorant itálica (la única cursiva de
