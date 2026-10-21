@@ -917,10 +917,16 @@ a.project { text-decoration:none; color:inherit; }
   text-transform: uppercase;
   letter-spacing: .05em;
 }
-/* Títulos de sección (h2/h3/h4) en Neue Montreal, la sans del manual
-   (may/minúscula, con acentos). Reemplaza a Italiana por decisión de marca. */
+/* Títulos de sección (h2/h3/h4): mismo sello que el hero → cuerpo en Italiana
+   (may/minúscula, con acentos) + INICIAL en Harume (marca). */
 .theme-brand h2, .theme-brand h3, .theme-brand h4,
-.theme-3df h2, .theme-3df h3, .theme-3df h4 { font-family: var(--sans); font-weight: 400; letter-spacing: -.015em; }
+.theme-3df h2, .theme-3df h3, .theme-3df h4 {
+  font-family: var(--serif); font-weight: 400; letter-spacing: 0; text-transform: none;
+}
+.theme-brand h2::first-letter, .theme-brand h3::first-letter, .theme-brand h4::first-letter,
+.theme-3df h2::first-letter, .theme-3df h3::first-letter, .theme-3df h4::first-letter {
+  font-family: "Harume Roman", "Italiana", serif;
+}
 /* Hero de la home: título con INICIAL en Harume (marca) + resto en Italiana,
    may/minúscula. "Scrivendo il futuro" va en Cormorant itálica (la cursiva). */
 .hero--home h1 {

@@ -10,7 +10,7 @@ Sitio de **Quintaglia Desarrollos Inmobiliarios** (Buenos Aires). Home de marca 
   python3 -m http.server 8777
   ```
   Luego abrir `http://localhost:8777/`.
-- **Cache-busting manual**: los links a `styles.css` y `script.js` llevan `?v=N`. Al cambiar CSS/JS hay que subir ese número en las 3 páginas. Versión actual: **v72**.
+- **Cache-busting manual**: los links a `styles.css` y `script.js` llevan `?v=N`. Al cambiar CSS/JS hay que subir ese número en las 3 páginas. Versión actual: **v73**.
   ```bash
   perl -0pi -e 's{styles\.css\?v=\d+}{styles.css?v=NN}g; s{script\.js\?v=\d+}{script.js?v=NN}g' index.html proyectos/3-de-febrero-2781.html proyectos/wood-recoleta.html
   ```
@@ -80,7 +80,7 @@ Bloque `.theme-wood` en `styles.css` con la paleta verde:
 - [ ] **Fuentes de marca** (inicio + 3DF): objetivo del manual = **Harume Roman** (títulos) + **Neue Montreal** (cuerpo). **Estado actual** (bloque `=== FUENTES INTERINAS ===` en `styles.css`, `.theme-brand`/`.theme-3df`):
   - Títulos (combo, decidido con la clienta): **Harume Roman** NO tiene minúsculas ni acentos (es una tipográfica de caja alta, estilo logo). Por eso:
     - **Hero (h1)** → Harume Roman en mayúscula, con `letter-spacing:.05em` para que no quede apretada (impacto de marca). `assets/fonts/HarumeRoman.woff2`.
-    - **Títulos de sección (h2/h3/h4)** → **Italiana** (Google Fonts) en may/minúscula, con acentos, sin mezcla.
+    - **Títulos de sección (h2/h3/h4)** → mismo sello que el hero del home: cuerpo en **Italiana** (Google Fonts, may/minúscula, con acentos) + **inicial en Harume** (`::first-letter`). Así todos los títulos de marca (inicio + 3DF) comparten el arranque Harume.
   - Cuerpo → **Neue Montreal** real (`assets/fonts/NeueMontreal-{Light,Regular,Semibold}.woff2`, `@font-face` 300/400/600). Versión free pero **completa (1041 glifos, con acentos/ñ)**: el cuerpo NO tiene mezcla. Hanken Grotesk / Inter quedan solo de fallback.
   - ⚠️ Ambas fuentes subidas son **"free for personal use"**. Para el sitio en vivo falta la **licencia comercial/webfont**: Harume full (US$19 Gumroad → además agrega acentos y quita la mezcla con Italiana) y Neue Montreal (Pangram Pangram, licencia web). Ver `assets/fonts/README.md`.
 
