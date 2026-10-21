@@ -908,6 +908,12 @@ a.project { text-decoration:none; color:inherit; }
   --serif: "Harume Roman", "Italiana", "Cormorant Garamond", "Times New Roman", serif;
   --sans:  "Neue Montreal", "Hanken Grotesk", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
+/* Harume es de caja alta (muestra todo en mayúsculas). Los caracteres
+   acentuados caen en Italiana; sin esto saldrían en minúscula y se veía
+   "NÚñEZ"/"SOLáRIUM". Forzamos mayúsculas en los títulos para que todo quede
+   parejo. (Al pasar a la Harume full con acentos, esto se puede quitar.) */
+.theme-brand h1, .theme-brand h2, .theme-brand h3, .theme-brand h4,
+.theme-3df h1, .theme-3df h2, .theme-3df h3, .theme-3df h4 { text-transform: uppercase; }
 
 /* =======================================================================
    === FUENTES DE MARCA (PENDIENTE) ===
