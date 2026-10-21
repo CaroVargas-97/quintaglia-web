@@ -10,7 +10,7 @@ Sitio de **Quintaglia Desarrollos Inmobiliarios** (Buenos Aires). Home de marca 
   python3 -m http.server 8777
   ```
   Luego abrir `http://localhost:8777/`.
-- **Cache-busting manual**: los links a `styles.css` y `script.js` llevan `?v=N`. Al cambiar CSS/JS hay que subir ese número en las 3 páginas. Versión actual: **v58**.
+- **Cache-busting manual**: los links a `styles.css` y `script.js` llevan `?v=N`. Al cambiar CSS/JS hay que subir ese número en las 3 páginas. Versión actual: **v59**.
   ```bash
   perl -0pi -e 's{styles\.css\?v=\d+}{styles.css?v=NN}g; s{script\.js\?v=\d+}{script.js?v=NN}g' index.html proyectos/3-de-febrero-2781.html proyectos/wood-recoleta.html
   ```
@@ -77,7 +77,7 @@ Bloque `.theme-wood` en `styles.css` con la paleta verde:
 - [ ] Revisar/confirmar el resto de WOOD contra la referencia (secciones que falten pulir).
 - [ ] Definir si el home y 3DF necesitan más pasadas de diseño/contenido.
 - [ ] Evaluar automatizar el cache-busting (hoy es manual con `?v=N`).
-- [ ] **Fuentes de marca** (inicio + 3DF): cambiar a **Harume Roman** (títulos) + **Neue Montreal** (cuerpo) del manual. Son de pago (requieren licencia **webfont/comercial**). Andamiaje listo y comentado en `styles.css` (`=== FUENTES DE MARCA (PENDIENTE) ===`) + `assets/fonts/README.md`. Falta: conseguir los archivos con licencia y activar el bloque.
+- [ ] **Fuentes de marca** (inicio + 3DF): el objetivo es **Harume Roman** (títulos) + **Neue Montreal** (cuerpo) del manual, pero son de pago (requieren licencia **webfont/comercial**). **Interino activo**: se usan alternativas gratis parecidas **Marcellus** (≈ Harume) + **Hanken Grotesk** (≈ Neue Montreal), vía Google Fonts, en `.theme-brand` (home) y `.theme-3df` — bloque `=== FUENTES INTERINAS ===` en `styles.css`. Al comprar las reales: subir archivos a `assets/fonts/`, borrar el bloque interino y descomentar `=== FUENTES DE MARCA (PENDIENTE) ===`. Ver `assets/fonts/README.md`.
 
 ## Git
 
