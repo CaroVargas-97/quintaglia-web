@@ -10,7 +10,7 @@ Sitio de **Quintaglia Desarrollos Inmobiliarios** (Buenos Aires). Home de marca 
   python3 -m http.server 8777
   ```
   Luego abrir `http://localhost:8777/`.
-- **Cache-busting manual**: los links a `styles.css` y `script.js` llevan `?v=N`. Al cambiar CSS/JS hay que subir ese número en las 3 páginas. Versión actual: **v63**.
+- **Cache-busting manual**: los links a `styles.css` y `script.js` llevan `?v=N`. Al cambiar CSS/JS hay que subir ese número en las 3 páginas. Versión actual: **v64**.
   ```bash
   perl -0pi -e 's{styles\.css\?v=\d+}{styles.css?v=NN}g; s{script\.js\?v=\d+}{script.js?v=NN}g' index.html proyectos/3-de-febrero-2781.html proyectos/wood-recoleta.html
   ```
@@ -77,7 +77,10 @@ Bloque `.theme-wood` en `styles.css` con la paleta verde:
 - [ ] Revisar/confirmar el resto de WOOD contra la referencia (secciones que falten pulir).
 - [ ] Definir si el home y 3DF necesitan más pasadas de diseño/contenido.
 - [ ] Evaluar automatizar el cache-busting (hoy es manual con `?v=N`).
-- [ ] **Fuentes de marca** (inicio + 3DF): el objetivo es **Harume Roman** (títulos) + **Neue Montreal** (cuerpo) del manual, pero son de pago (requieren licencia **webfont/comercial**). **Interino activo**: se usan alternativas gratis parecidas **Marcellus** (≈ Harume) + **Hanken Grotesk** (≈ Neue Montreal), vía Google Fonts, en `.theme-brand` (home) y `.theme-3df` — bloque `=== FUENTES INTERINAS ===` en `styles.css`. Al comprar las reales: subir archivos a `assets/fonts/`, borrar el bloque interino y descomentar `=== FUENTES DE MARCA (PENDIENTE) ===`. Ver `assets/fonts/README.md`.
+- [ ] **Fuentes de marca** (inicio + 3DF): objetivo del manual = **Harume Roman** (títulos) + **Neue Montreal** (cuerpo). **Estado actual** (bloque `=== FUENTES INTERINAS ===` en `styles.css`, `.theme-brand`/`.theme-3df`):
+  - Títulos → **Harume Roman** real (`assets/fonts/HarumeRoman.woff2`, `@font-face`) con **Italiana de respaldo por-glifo** para los caracteres que Harume NO tiene (á é í ó ú ñ ¿ ¡). Por eso en "Núñez"/"Ubicación" la ú/ñ/ó se ven en otra letra (mezcla aceptada).
+  - Cuerpo → **Hanken Grotesk** (≈ Neue Montreal, Google Fonts).
+  - ⚠️ El `HarumeRoman.woff2` subido es la versión **free (uso personal, 130 glifos, sin acentos)**. Falta: **Harume full** (US$19 Gumroad → acentos + licencia comercial; reemplaza el archivo y se quita Italiana del stack) y **Neue Montreal** con licencia web. Ver `assets/fonts/README.md` y el bloque comentado `=== FUENTES DE MARCA (PENDIENTE) ===`.
 
 ## Git
 
