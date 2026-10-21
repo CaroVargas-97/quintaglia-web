@@ -921,18 +921,27 @@ a.project { text-decoration:none; color:inherit; }
    (may/minúscula, con acentos). Reemplaza a Italiana por decisión de marca. */
 .theme-brand h2, .theme-brand h3, .theme-brand h4,
 .theme-3df h2, .theme-3df h3, .theme-3df h4 { font-family: var(--sans); font-weight: 400; letter-spacing: -.015em; }
-/* Hero de la home: título en Cormorant Garamond itálica (la cursiva elegante
-   de "Scrivendo il futuro"), en may/minúscula. No usa Harume ni mayúsculas. */
+/* Hero de la home: título con INICIAL en Harume (marca) + resto en Italiana,
+   may/minúscula. "Scrivendo il futuro" va en Cormorant itálica (la cursiva). */
 .hero--home h1 {
-  font-family: "Cormorant Garamond", "Times New Roman", serif;
-  font-style: italic;
+  font-family: "Italiana", "Cormorant Garamond", "Times New Roman", serif;
+  font-style: normal;
   font-weight: 400;
   text-transform: none;
   letter-spacing: 0;
-  font-size: clamp(2.8rem, 6.4vw, 6rem);
-  line-height: 1.04;
+  font-size: clamp(2.6rem, 6vw, 5.4rem);
+  line-height: 1.06;
 }
-.hero--home h1 em { font-style: italic; }
+.hero--home h1::first-letter { font-family: "Harume Roman", "Italiana", serif; }
+.hero--home h1 em { font-style: italic; color: var(--mink); }
+.hero--home .pp-hero__loc {
+  font-family: "Cormorant Garamond", "Times New Roman", serif;
+  font-style: italic;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: clamp(1.2rem, 2.1vw, 1.7rem);
+  opacity: .95;
+}
 
 /* =======================================================================
    === FUENTES DE MARCA (PENDIENTE) ===
