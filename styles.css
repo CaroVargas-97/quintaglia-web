@@ -875,16 +875,15 @@ a.project { text-decoration:none; color:inherit; }
 @media (max-width:620px){ .ad-body{ grid-template-columns:1fr; } .theme-wood .avail__floors{ grid-template-columns:repeat(5,1fr);} }
 
 /* === FUENTES DE MARCA (inicio + 3DF) ===
-   Títulos → Italiana (sola, sin mezcla) como stand-in de Harume Roman.
-   La Harume free NO tiene acentos/ñ: al mezclarla, la ú/ñ/á de palabras
-   como "Núñez"/"Solárium" caían en Italiana y se veía mal. Por eso, hasta
-   tener la Harume FULL (con acentos), se usa Italiana en todo el título.
-   El @font-face de Harume queda definido pero sin usar (no se descarga).
-   Cuerpo → Neue Montreal (versión free, completa con acentos/ñ).
+   Títulos → Harume Roman (fuente de marca). La Harume free NO tiene acentos/ñ,
+   así que en palabras con acento (Núñez, Ubicación, Tipologías, Solárium…) el
+   carácter acentuado cae en Italiana → hay una pequeña mezcla DENTRO de esas
+   palabras (decisión aceptada por la clienta, es temporal).
+   Con la Harume FULL (con acentos) desaparece la mezcla: reemplazar el
+   HarumeRoman.woff2 por la full y quitar Italiana del stack de --serif.
+   Cuerpo → Neue Montreal (versión free, completa con acentos/ñ, sin mezcla).
    ⚠️ Ambas son "free for personal use": para el sitio en vivo hace falta
-   la licencia comercial/webfont de cada una.
-   Para activar Harume FULL: reemplazar HarumeRoman.woff2 por la full y poner
-   --serif: "Harume Roman", "Italiana", ... */
+   la licencia comercial/webfont de cada una. */
 @font-face {
   font-family: "Harume Roman";
   src: url("assets/fonts/HarumeRoman.woff2") format("woff2");
@@ -906,7 +905,7 @@ a.project { text-decoration:none; color:inherit; }
   font-weight: 600; font-style: normal; font-display: swap;
 }
 .theme-brand, .theme-3df {
-  --serif: "Italiana", "Cormorant Garamond", "Times New Roman", serif;
+  --serif: "Harume Roman", "Italiana", "Cormorant Garamond", "Times New Roman", serif;
   --sans:  "Neue Montreal", "Hanken Grotesk", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
