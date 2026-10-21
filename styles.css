@@ -939,9 +939,6 @@ a.project { text-decoration:none; color:inherit; }
   line-height: 1.06;
 }
 .hero--home h1::first-letter { font-family: "Harume Roman", "Italiana", serif; }
-/* El ampersand de Italiana se dibuja como una ligadura rara ("ez"): forzamos
-   el "&" a Cormorant itálica (ampersand clásico y legible) en todos los temas. */
-.amp { font-family: "Cormorant Garamond", "Times New Roman", serif; font-style: italic; font-weight: 500; }
 .hero--home h1 em { font-style: italic; color: var(--mink); }
 .hero--home .pp-hero__loc {
   font-family: "Cormorant Garamond", "Times New Roman", serif;
