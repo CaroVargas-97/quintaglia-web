@@ -2,6 +2,10 @@
    QUINTAGLIA — interacciones
 =========================================================== */
 (function () {
+  /* --- Arrancar siempre arriba al cargar (salvo que la URL tenga ancla #) --- */
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  window.addEventListener('load', () => { if (!location.hash) window.scrollTo(0, 0); });
+
   const nav = document.getElementById('nav');
   const toggle = document.getElementById('navToggle');
   const menu = document.getElementById('navMenu');
