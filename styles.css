@@ -938,7 +938,9 @@ a.project { text-decoration:none; color:inherit; }
   font-size: clamp(2.6rem, 6vw, 5.4rem);
   line-height: 1.06;
 }
-.hero--home h1::first-letter { font-family: "Harume Roman", "Italiana", serif; }
+/* Primera palabra del hero en Harume mayúscula (presencia de marca, dialoga
+   con el hero full-Harume de 3DF); el resto en Marcellus may/minúscula. */
+.hero--home h1 .hw { font-family: "Harume Roman", "Italiana", serif; text-transform: uppercase; letter-spacing: .03em; }
 .hero--home h1 em { font-style: italic; color: var(--mink); }
 .hero--home .pp-hero__loc {
   font-family: "Cormorant Garamond", "Times New Roman", serif;
