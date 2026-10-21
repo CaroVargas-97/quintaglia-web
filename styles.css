@@ -235,8 +235,8 @@ section { position: relative; }
 .manifesto__grid { display: grid; grid-template-columns: 1fr; gap: clamp(2.4rem, 5vw, 4rem); }
 .manifesto__statement {
   font-family: var(--serif); font-weight: 300;
-  font-size: clamp(1.9rem, 4.6vw, 4rem); line-height: 1.12; letter-spacing: -.015em;
-  max-width: 22ch;
+  font-size: clamp(1.6rem, 3.2vw, 2.7rem); line-height: 1.18; letter-spacing: -.01em;
+  max-width: 24ch;
 }
 .manifesto__statement em { font-style: italic; color: var(--accent); }
 .manifesto__cols { display: grid; grid-template-columns: repeat(2, 1fr); gap: clamp(1.6rem, 4vw, 3.5rem); align-items: start; }
@@ -255,7 +255,7 @@ section { position: relative; }
 =========================================================== */
 .projects { padding-block: var(--section-y); background: var(--nude); }
 .section-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 2rem; flex-wrap: wrap; margin-bottom: clamp(2.6rem, 5vw, 4.5rem); }
-.section-head h2 { font-size: clamp(2.2rem, 5vw, 4rem); }
+.section-head h2 { font-size: clamp(1.8rem, 3.4vw, 2.8rem); }
 .section-head p { max-width: 38ch; color: #42403c; }
 
 .project {
@@ -276,7 +276,7 @@ section { position: relative; }
 .project--reverse { grid-template-columns: .85fr 1.15fr; }
 .project--reverse .project__media { order: 2; }
 .project__num { font-family: var(--serif); font-size: 1rem; color: var(--accent); letter-spacing: .1em; }
-.project h3 { font-size: clamp(2rem, 4.2vw, 3.4rem); margin: .35rem 0 .2rem; }
+.project h3 { font-size: clamp(1.5rem, 2.8vw, 2.2rem); margin: .35rem 0 .2rem; }
 .project__loc { font-size: .8rem; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); }
 .project__desc { margin: 1.3rem 0 1.6rem; max-width: 42ch; color: #3c3a36; }
 .project__specs { display: flex; flex-wrap: wrap; gap: 1.8rem 2.6rem; margin-bottom: 1.9rem; }
@@ -289,7 +289,7 @@ section { position: relative; }
 =========================================================== */
 .philo { padding-block: var(--section-y); background: var(--ink); color: var(--nude); }
 .philo__head { max-width: 30ch; margin-bottom: clamp(2.6rem, 5vw, 4.5rem); }
-.philo__head h2 { font-size: clamp(2.2rem, 5vw, 4rem); }
+.philo__head h2 { font-size: clamp(1.8rem, 3.4vw, 2.8rem); }
 .philo__head .eyebrow { color: var(--mink); }
 .philo__head .eyebrow::before { background: var(--mink); }
 .philo__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(1.6rem, 3vw, 3rem); }
@@ -303,7 +303,7 @@ section { position: relative; }
 =========================================================== */
 .interiors { padding-block: var(--section-y); background: var(--paper); }
 .interiors__head { text-align: center; max-width: 44ch; margin: 0 auto clamp(2.4rem, 5vw, 4rem); }
-.interiors__head h2 { font-size: clamp(2.2rem, 5vw, 4rem); }
+.interiors__head h2 { font-size: clamp(1.8rem, 3.4vw, 2.8rem); }
 .gallery {
   display: grid; grid-template-columns: repeat(12, 1fr); gap: clamp(.7rem, 1.4vw, 1.1rem);
   grid-auto-rows: 1fr;
@@ -325,7 +325,7 @@ section { position: relative; }
 =========================================================== */
 .team { padding-block: var(--section-y); background: var(--navy); color: var(--nude); }
 .team__grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(2.4rem, 6vw, 6rem); align-items: center; }
-.team__head h2 { font-size: clamp(2.2rem, 5vw, 3.6rem); color: var(--white); }
+.team__head h2 { font-size: clamp(1.8rem, 3.2vw, 2.6rem); color: var(--white); }
 .team__head .eyebrow { color: var(--mink); } .team__head .eyebrow::before { background: var(--mink); }
 .team__head p { color: #c3c9ce; max-width: 40ch; margin-top: 1.4rem; }
 .partners { display: grid; gap: clamp(1.2rem, 2vw, 1.6rem); }
@@ -343,7 +343,7 @@ section { position: relative; }
 =========================================================== */
 .contact { padding-block: var(--section-y); background: var(--mink); color: var(--ink); }
 .contact__grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2.4rem, 6vw, 6rem); }
-.contact__head h2 { font-size: clamp(2.4rem, 5.5vw, 4.4rem); max-width: 14ch; }
+.contact__head h2 { font-size: clamp(1.9rem, 3.8vw, 3rem); max-width: 16ch; }
 .contact__head .eyebrow { color: var(--ink-soft); } .contact__head .eyebrow::before { background: var(--ink-soft); }
 .contact__details { margin-top: clamp(1.8rem, 4vw, 3rem); display: grid; gap: 1.4rem; }
 .contact__details a { display: flex; align-items: center; gap: 1rem; font-size: 1.05rem; width: fit-content; }
@@ -917,23 +917,28 @@ a.project { text-decoration:none; color:inherit; }
   text-transform: uppercase;
   letter-spacing: .05em;
 }
-/* Títulos de sección (h2/h3/h4): Marcellus limpio, sin inicial Harume suelta.
-   La Harume queda reservada a los heros (gesto de marca grande, no en el cuerpo
-   de las frases). */
+/* Títulos de sección (h2/h3/h4): Marcellus, con la PRIMERA PALABRA en Harume
+   (span .hw). Gesto de marca al arranque, sin recargar el resto. */
 .theme-brand h2, .theme-brand h3, .theme-brand h4,
 .theme-3df h2, .theme-3df h3, .theme-3df h4 {
   font-family: var(--serif); font-weight: 400; letter-spacing: 0; text-transform: none;
 }
+/* Primera palabra del título en Harume (mayúscula); el resto en Marcellus. */
+.theme-brand .hw, .theme-3df .hw { font-family: "Harume Roman", "Italiana", serif; font-style: normal; text-transform: uppercase; letter-spacing: .02em; }
 /* Acento sutil en títulos: una palabra en Cormorant itálica (la única cursiva de
-   acento del sitio, la misma de "Scrivendo il futuro"). Sin Harume en la frase. */
+   acento del sitio, la misma de "Scrivendo il futuro"). */
 .theme-brand h2 em, .theme-brand h3 em,
 .theme-3df h2 em, .theme-3df h3 em {
   font-family: "Cormorant Garamond", "Times New Roman", serif;
   font-style: italic; font-weight: 500; color: var(--accent);
 }
-/* Hero de la home: Harume mayúscula (como 3DF), pero más chico porque la frase
-   es larga (el de 3DF es un título corto). "Scrivendo il futuro" en Cormorant. */
-.hero--home h1 { font-size: clamp(2rem, 4.6vw, 4rem); line-height: 1.04; letter-spacing: .03em; }
+/* Hero de la home: Marcellus con la primera palabra en Harume (como los títulos).
+   "Scrivendo il futuro" en Cormorant itálica. */
+.hero--home h1 {
+  font-family: "Marcellus", "Italiana", "Cormorant Garamond", serif;
+  text-transform: none; font-weight: 400;
+  font-size: clamp(1.9rem, 4vw, 3.4rem); line-height: 1.08; letter-spacing: 0;
+}
 .hero--home .pp-hero__loc {
   font-family: "Cormorant Garamond", "Times New Roman", serif;
   font-style: italic;
