@@ -876,10 +876,10 @@ a.project { text-decoration:none; color:inherit; }
 
 /* === FUENTES INTERINAS (hasta comprar Harume Roman + Neue Montreal) ===
    Alternativas gratis (libres para uso comercial, con acentos/ñ) en inicio + 3DF:
-   Marcellus ≈ Harume Roman (títulos) · Hanken Grotesk ≈ Neue Montreal (cuerpo).
+   Italiana ≈ Harume Roman (títulos) · Hanken Grotesk ≈ Neue Montreal (cuerpo).
    Al activar las de marca: borrar ESTE bloque y descomentar el de abajo. */
 .theme-brand, .theme-3df {
-  --serif: "Marcellus", "Cormorant Garamond", "Times New Roman", serif;
+  --serif: "Italiana", "Cormorant Garamond", "Times New Roman", serif;
   --sans:  "Hanken Grotesk", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
