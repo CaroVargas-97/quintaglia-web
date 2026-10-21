@@ -917,13 +917,19 @@ a.project { text-decoration:none; color:inherit; }
   text-transform: uppercase;
   letter-spacing: .05em;
 }
-/* Títulos de sección (h2/h3/h4): Marcellus, con la PRIMERA LETRA en Harume
-   (::first-letter). Gesto de marca al arranque, sin recargar el resto. */
-.theme-brand h2, .theme-brand h3, .theme-brand h4,
+/* Títulos de sección del inicio (h2): ENTEROS en Harume mayúscula (gesto de
+   marca pedido por la clienta). */
+.theme-brand h2 {
+  font-family: "Harume Roman", "Italiana", serif; font-weight: 400;
+  text-transform: uppercase; letter-spacing: .03em; line-height: 1.14;
+}
+/* Resto de títulos (h3/h4 del inicio y todos los de 3DF): Marcellus con la
+   PRIMERA LETRA en Harume. */
+.theme-brand h3, .theme-brand h4,
 .theme-3df h2, .theme-3df h3, .theme-3df h4 {
   font-family: var(--serif); font-weight: 400; letter-spacing: 0; text-transform: none;
 }
-.theme-brand h2::first-letter, .theme-brand h3::first-letter, .theme-brand h4::first-letter,
+.theme-brand h3::first-letter, .theme-brand h4::first-letter,
 .theme-3df h2::first-letter, .theme-3df h3::first-letter, .theme-3df h4::first-letter {
   font-family: "Harume Roman", "Italiana", serif;
 }
