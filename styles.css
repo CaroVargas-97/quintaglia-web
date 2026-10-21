@@ -938,9 +938,10 @@ a.project { text-decoration:none; color:inherit; }
   font-size: clamp(2.6rem, 6vw, 5.4rem);
   line-height: 1.06;
 }
-/* Palabra clave del hero ("trasciende") en Harume mayúscula (presencia de
-   marca, dialoga con el hero full-Harume de 3DF); el resto en Marcellus. */
-.hero--home h1 .hw { font-family: "Harume Roman", "Italiana", serif; text-transform: uppercase; letter-spacing: .03em; }
+/* Palabra clave destacada en Harume mayúscula (presencia de marca). Reutilizable
+   en cualquier título de marca: hero del inicio ("trasciende"), manifiesto
+   ("bienestar"), etc. Dialoga con el hero full-Harume de 3DF. */
+.theme-brand .hw, .theme-3df .hw { font-family: "Harume Roman", "Italiana", serif; font-style: normal; text-transform: uppercase; letter-spacing: .03em; }
 .hero--home h1 em { font-style: italic; color: var(--mink); }
 .hero--home .pp-hero__loc {
   font-family: "Cormorant Garamond", "Times New Roman", serif;
