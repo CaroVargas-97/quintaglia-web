@@ -34,6 +34,18 @@
   }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
+  /* Fallback: en algunos contextos (iframe de preview, observer que no dispara)
+     el contenido .reveal quedaría invisible. A los 1.2s mostramos lo que ya
+     está en viewport para que la página nunca quede en blanco. */
+  setTimeout(() => {
+    document.querySelectorAll('.reveal:not(.in)').forEach(el => {
+      const r = el.getBoundingClientRect();
+      if (r.top < (window.innerHeight || document.documentElement.clientHeight)) {
+        el.classList.add('in');
+      }
+    });
+  }, 1200);
+
   /* --- Parallax suave en el hero --- */
   const heroImg = document.getElementById('heroImg');
   if (heroImg && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
