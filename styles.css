@@ -699,7 +699,7 @@ a.project { text-decoration:none; color:inherit; }
 /* ===========================================================
    TEMA WOOD — identidad verde + tipografía Fraunces
 =========================================================== */
-/* Tokens WOOD = paleta de la página de referencia (teamscaglia) */
+/* Tokens WOOD = paleta verde del tema */
 .theme-wood {
   --sans: "Montserrat", -apple-system, BlinkMacSystemFont, sans-serif;
   --ink:    #2d322b;   /* texto verde-grisáceo oscuro */
@@ -727,6 +727,35 @@ a.project { text-decoration:none; color:inherit; }
 .theme-3df .typ-card { padding:clamp(1.4rem,2.5vw,2rem); }
 .theme-3df .typ-card h3 { color:var(--accent); font-size:clamp(1.35rem,2.2vw,1.75rem); }
 .theme-3df .typ-card .typ-from { font-family:var(--sans); font-weight:700; font-size:clamp(1.25rem,1.9vw,1.55rem); letter-spacing:-.01em; color:var(--accent); }
+
+/* ===== 3 DE FEBRERO — réplica de la página de referencia ===== */
+/* Hero: lockup de marca QUINTAGLIA + 3 DE FEBRERO 2781 */
+.pp-hero__brand { font-size:clamp(3rem,11vw,8.5rem); line-height:.92; margin:0; }
+.pp-hero__project { font-family:var(--sans); font-weight:300; font-size:clamp(.95rem,2.6vw,1.8rem);
+  letter-spacing:.42em; text-transform:uppercase; color:var(--nude); margin:.4rem 0 1.3rem; }
+.pp-hero__loc { display:flex; align-items:center; }
+/* Intro "Habitar": imagen a la izquierda, texto a la derecha */
+.pp-intro__wrap { display:grid; grid-template-columns:1fr 1fr; gap:clamp(2rem,6vw,5rem); align-items:center; }
+.pp-intro__wrap .pp-intro__img { margin-top:0; aspect-ratio:4/5; }
+.pp-intro__body .eyebrow { margin-bottom:1rem; display:inline-block; }
+.pp-intro__sub { font-family:"Cormorant Garamond","Times New Roman",serif; font-style:italic;
+  font-size:clamp(1.3rem,2.6vw,2rem); color:var(--accent); margin:-.2rem 0 1.5rem; letter-spacing:.01em; }
+.pp-intro__body p { margin-bottom:1.1rem; }
+.pp-intro__body em { font-style:italic; }
+.pp-intro__link { font-family:var(--sans); font-size:.72rem; letter-spacing:.2em; text-transform:uppercase;
+  border-bottom:1px solid currentColor; padding-bottom:.4rem; display:inline-block; margin-top:1rem; }
+/* CTA "Sumate a Quintaglia" */
+.pp-cta__sub { font-family:"Cormorant Garamond","Times New Roman",serif; font-style:italic;
+  font-size:clamp(1.3rem,2.6vw,2rem); color:var(--mink); margin:-.8rem auto 1.5rem; }
+/* Secciones oscuras (ubicación y financiación) como la referencia */
+.theme-3df .pp-loc, .theme-3df .pp-finance { background:#26251f; color:#efe9dd; }
+.theme-3df .pp-loc h2, .theme-3df .pp-finance h2 { color:#efe9dd; }
+.theme-3df .pp-loc .lead { color:rgba(239,233,221,.82); }
+.theme-3df .pp-loc .eyebrow, .theme-3df .pp-finance .eyebrow { color:var(--mink); }
+.theme-3df .pp-loc .eyebrow::before, .theme-3df .pp-finance .eyebrow::before { background:var(--mink); }
+.theme-3df .fin-stats > div { border-top-color:rgba(239,233,221,.22); }
+.theme-3df .fin-stats .fl { color:var(--mink); }
+@media (max-width:860px){ .pp-intro__wrap { grid-template-columns:1fr; gap:1.8rem; } .pp-intro__wrap .pp-intro__img{ aspect-ratio:4/3; } }
 .theme-wood .pp-specs   { background: var(--nude); }                 /* crema */
 .theme-wood .pp-gal     { background: var(--paper); color: var(--ink); }
 .theme-wood .pp-avail   { background: var(--paper); }

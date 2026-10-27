@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Hanken+Grotesk:wght@300;400;500;600&family=Inter:wght@300;400;500&family=Italiana&family=Marcellus&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="../assets/logo/mono-dark.png">
   <link rel="apple-touch-icon" href="../assets/logo/mono-dark.png">
-  <link rel="stylesheet" href="../styles.css?v=90">
+  <link rel="stylesheet" href="../styles.css?v=91">
 </head>
 <body class="theme-3df">
 
@@ -37,37 +37,32 @@
   <!-- HERO -->
   <header class="pp-hero" id="top">
     <div class="pp-hero__bg"><img src="../assets/img/3df-exterior-dusk.jpg" alt="3 de Febrero 2781" id="heroImg"></div>
-    <div class="pp-hero__inner">
-      <span class="eyebrow pp-hero__eyebrow reveal">Un desarrollo Quintaglia</span>
-      <h1 class="reveal d1">3 de Febrero 2781</h1>
-      <p class="pp-hero__loc reveal d1">Núñez · Belgrano — Buenos Aires</p>
-      <div class="pp-hero__stats reveal d2">
-        <div><span class="k">Altura</span><span class="v">13 pisos</span></div>
-        <div><span class="k">Tipologías</span><span class="v">Mono a 4 amb.</span></div>
-        <div><span class="k">Amenities</span><span class="v">Piscina · Solárium</span></div>
-        <div><span class="k">Estado</span><span class="v">En desarrollo</span></div>
-      </div>
+    <div class="pp-hero__inner pp-hero__inner--brand">
+      <h1 class="pp-hero__brand reveal">Quintaglia</h1>
+      <p class="pp-hero__project reveal d1">3 de Febrero 2781</p>
+      <p class="pp-hero__loc reveal d1"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" style="vertical-align:-2px;margin-right:.3em"><path d="M12 21s-7-5.3-7-11a7 7 0 0 1 14 0c0 5.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>3 de Febrero 2781, Núñez · Buenos Aires</p>
       <div class="pp-hero__ctas reveal d3">
-        <a href="#tipologias" class="btn btn--light">Ver tipologías</a>
-        <a href="#contacto" class="btn btn--light">Consultar</a>
+        <a href="https://wa.me/5491100000000" target="_blank" rel="noopener" class="btn btn--wa">Quiero más info</a>
+        <a href="#disponibilidad" class="btn btn--light">Ver unidades disponibles →</a>
       </div>
     </div>
   </header>
 
   <!-- INTRO -->
   <section class="pp-intro">
-    <div class="wrap">
-      <div class="pp-intro__grid">
-        <h2 class="reveal">Espacio que abraza.</h2>
-        <div class="reveal d1">
-          <p class="lead">Un proyecto donde cada detalle trasciende lo constructivo para transformarse en bienestar cotidiano.</p>
-          <p>En 3 de Febrero 2781 la arquitectura se convierte en el punto de partida de una nueva etapa. Un edificio en esquina que abraza la luz, abre sus visuales y crea espacios donde cada metro se siente.</p>
-          <p>Sus 13 pisos elevan la experiencia cotidiana, combinando diseño contemporáneo, amplitud y materiales que perduran. El movimiento de la ciudad queda a pocos pasos, pero puertas adentro se respira calma, equilibrio y bienestar.</p>
-        </div>
-      </div>
-      <figure class="pp-intro__img reveal d2" data-lightbox="../assets/img/amenity-rooftop.jpg">
-        <img src="../assets/img/amenity-rooftop.jpg" alt="Expansión — 3 de Febrero 2781">
+    <div class="wrap pp-intro__wrap">
+      <figure class="pp-intro__img reveal" data-lightbox="../assets/img/3df-exterior-frontal.jpg">
+        <img src="../assets/img/3df-exterior-frontal.jpg" alt="3 de Febrero 2781 — fachada">
       </figure>
+      <div class="pp-intro__body reveal d1">
+        <span class="eyebrow">El proyecto</span>
+        <h2>Habitar</h2>
+        <p class="pp-intro__sub">/ Núñez · Belgrano</p>
+        <p>En <strong>Quintaglia</strong>, la arquitectura contemporánea da forma a espacios pensados para ser vividos. Cada detalle combina <em>diseño</em>, <em>funcionalidad</em> y <em>calidad constructiva</em>, creando ambientes que acompañan el ritmo de la ciudad sin perder calidez.</p>
+        <p>A lo largo de sus <strong>12 pisos</strong>, el edificio se integra de manera natural al entorno urbano, con <strong>amenities</strong> —piscina, solárium, parrilla y laundry— y un <strong>local comercial en esquina</strong> que suma vida al barrio.</p>
+        <p>Vivir Quintaglia es sentir <strong>Núñez y Belgrano</strong> desde adentro, en un lugar donde la ciudad se vuelve <strong>hogar</strong>.</p>
+        <a href="#disponibilidad" class="pp-intro__link">Ver unidades disponibles →</a>
+      </div>
     </div>
   </section>
 
@@ -447,14 +442,27 @@
     </div>
   </section>
 
+  <!-- FINANCIACIÓN -->
+  <section class="pp-finance" id="financiacion">
+    <div class="wrap">
+      <span class="eyebrow reveal">Plan de pago</span>
+      <h2 class="reveal d1">Financiación directa</h2>
+      <div class="fin-stats reveal d2">
+        <div><span class="fn">50%</span><span class="fl">De anticipo</span></div>
+        <div><span class="fn">24</span><span class="fl">Cuotas en USD o CAC</span></div>
+        <div><span class="fn">2028</span><span class="fl">2<sup>do</sup> semestre · entrega estimada</span></div>
+      </div>
+    </div>
+  </section>
+
   <!-- CTA -->
   <section class="pp-cta" id="contacto">
     <div class="wrap">
-      <span class="eyebrow reveal">Hablemos</span>
-      <h2 class="reveal d1" style="margin-top:1rem">Conocé 3 de Febrero 2781.</h2>
-      <p class="reveal d2" style="max-width:46ch;margin:0 auto;color:#c9c4bc">Dejanos tu consulta y te contactamos con disponibilidad, precios y formas de pago.</p>
+      <h2 class="reveal d1">Sumate a Quintaglia</h2>
+      <p class="pp-cta__sub reveal d1">/ Núñez · Belgrano</p>
+      <p class="reveal d2" style="max-width:52ch;margin:0 auto;color:#c9c4bc">Escribinos y te enviamos la lista de precios, las plantas disponibles y el brochure completo del desarrollo.</p>
       <div class="pp-cta__btns reveal d2">
-        <a href="https://wa.me/5491100000000" target="_blank" rel="noopener" class="btn btn--light">WhatsApp</a>
+        <a href="https://wa.me/5491100000000" target="_blank" rel="noopener" class="btn btn--wa">Quiero más info</a>
         <a href="../index.html#contacto" class="btn btn--light">Formulario de contacto</a>
       </div>
     </div>
@@ -495,6 +503,6 @@
   </footer>
 
   <div class="lightbox" id="lightbox"><img src="" alt=""></div>
-  <script src="../script.js?v=90"></script>
+  <script src="../script.js?v=91"></script>
 </body>
 </html>
