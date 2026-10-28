@@ -942,9 +942,12 @@ a.project { text-decoration:none; color:inherit; }
    (solo mayúsculas, como el logo), así que va en uppercase y con más aire
    (letter-spacing) para que no quede apretada. */
 .theme-brand h1, .theme-3df h1 {
-  font-family: "Harume Roman", "Italiana", "Cormorant Garamond", "Times New Roman", serif;
+  font-family: "Marcellus", "Italiana", "Cormorant Garamond", "Times New Roman", serif;
   text-transform: uppercase;
-  letter-spacing: .1em;
+  letter-spacing: .08em;
+}
+.theme-brand h1::first-letter, .theme-3df h1::first-letter {
+  font-family: "Harume Roman", "Italiana", serif;
 }
 /* Títulos de sección (h2/h3/h4): Marcellus limpio (legible y delicado), con
    solo la PRIMERA LETRA en Harume como guiño de marca. La Harume fuerte queda
@@ -964,14 +967,14 @@ a.project { text-decoration:none; color:inherit; }
   font-family: "Cormorant Garamond", "Times New Roman", serif;
   font-style: italic; font-weight: 500; color: var(--accent);
 }
-/* Hero de la home: Harume completo mayúscula (como el hero de 3DF), con más
-   aire entre letras para que no queden apretadas. "Scrivendo il futuro" en
-   Cormorant itálica. */
+/* Hero de la home: inicial en Harume + resto en Marcellus (limpio, como la
+   referencia). "Scrivendo il futuro" en Cormorant itálica. */
 .hero--home h1 {
-  font-family: "Harume Roman", "Italiana", serif;
+  font-family: "Marcellus", "Italiana", serif;
   text-transform: uppercase; font-weight: 400;
-  font-size: clamp(1.7rem, 3.6vw, 3rem); line-height: 1.04; letter-spacing: .1em;
+  font-size: clamp(1.7rem, 3.6vw, 3rem); line-height: 1.04; letter-spacing: .08em;
 }
+.hero--home h1::first-letter { font-family: "Harume Roman", "Italiana", serif; }
 .hero--home .pp-hero__loc {
   font-family: "Cormorant Garamond", "Times New Roman", serif;
   font-style: italic;
