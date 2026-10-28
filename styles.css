@@ -834,6 +834,11 @@ a.project { text-decoration:none; color:inherit; }
 .wood-brand { font-family:var(--serif); font-weight:500; font-size:1.55rem; letter-spacing:.14em; line-height:.86; color:var(--nude); text-transform:uppercase; }
 .wood-brand small { display:block; font-family:var(--sans); font-weight:400; font-size:.5rem; letter-spacing:.42em; margin-top:4px; opacity:.92; }
 .nav.scrolled .wood-brand { color:var(--ink); }
+.wood-nav__right { display:flex; align-items:center; gap:clamp(1rem,2.5vw,2rem); }
+.wood-nav__home { font-family:var(--sans); font-size:.72rem; letter-spacing:.16em; text-transform:uppercase; color:var(--nude); opacity:.85; }
+.wood-nav__home:hover { opacity:1; }
+.nav.scrolled .wood-nav__home { color:var(--ink); }
+@media (max-width:600px){ .wood-nav__home { display:none; } }
 
 /* Ubicación — subtítulo itálico */
 .loc-subt { font-family:var(--serif); font-style:italic; font-size:clamp(1.1rem,1.8vw,1.5rem); margin:-.3rem 0 1.3rem; }
