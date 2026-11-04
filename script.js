@@ -120,4 +120,20 @@
     msg.textContent = '¡Gracias, ' + nombre.split(' ')[0] + '! Recibimos tu consulta y te contactaremos pronto.';
     form.reset();
   });
+
+  /* --- Newsletter (demo, sin backend) --- */
+  const nlForm = document.getElementById('nlForm');
+  const nlMsg = document.getElementById('nlMsg');
+  if (nlForm) nlForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const email = (document.getElementById('nlEmail').value || '').trim();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      nlMsg.style.color = '#7a2d2d';
+      nlMsg.textContent = 'Ingresá un email válido.';
+      return;
+    }
+    nlMsg.style.color = '';
+    nlMsg.textContent = '¡Listo! Te sumamos a la lista. Pronto vas a tener novedades.';
+    nlForm.reset();
+  });
 })();

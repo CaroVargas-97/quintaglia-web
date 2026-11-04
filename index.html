@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Hanken+Grotesk:wght@300;400;500;600&family=Inter:wght@300;400;500&family=Italiana&family=Marcellus&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="assets/logo/mono-dark.png">
   <link rel="apple-touch-icon" href="assets/logo/mono-dark.png">
-  <link rel="stylesheet" href="styles.css?v=99">
+  <link rel="stylesheet" href="styles.css?v=100">
 </head>
 <body class="theme-brand">
 
@@ -206,6 +206,57 @@
     </div>
   </section>
 
+  <!-- ===================== MAPA ===================== -->
+  <section class="map-sec" id="ubicaciones">
+    <div class="wrap">
+      <div class="map-head">
+        <span class="eyebrow reveal">Dónde estamos</span>
+        <h2 class="reveal d1" style="margin-top:1rem">Nuestros desarrollos en el mapa.</h2>
+      </div>
+      <div class="map-grid reveal d1">
+        <a class="map-card" href="proyectos/3-de-febrero-2781.html">
+          <div class="map-card__frame">
+            <iframe title="Mapa 3 de Febrero 2781" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=3%20de%20Febrero%202781%2C%20N%C3%BA%C3%B1ez%2C%20Buenos%20Aires&z=15&output=embed"></iframe>
+          </div>
+          <div class="map-card__cap">
+            <span class="map-card__num">01</span>
+            <h3>3 de Febrero 2781</h3>
+            <span class="map-card__loc">Núñez · Belgrano — Buenos Aires</span>
+          </div>
+        </a>
+        <a class="map-card" href="proyectos/wood-recoleta.html">
+          <div class="map-card__frame">
+            <iframe title="Mapa WOOD Recoleta" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Larrea%201180%2C%20Recoleta%2C%20Buenos%20Aires&z=15&output=embed"></iframe>
+          </div>
+          <div class="map-card__cap">
+            <span class="map-card__num">02</span>
+            <h3>WOOD Recoleta</h3>
+            <span class="map-card__loc">Larrea 1180 · Recoleta — Buenos Aires</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== NEWSLETTER ===================== -->
+  <section class="newsletter">
+    <div class="wrap nl-grid">
+      <div class="nl-copy reveal">
+        <span class="eyebrow">Novedades</span>
+        <h2 style="margin-top:1rem">Enterate de los próximos lanzamientos.</h2>
+        <p>Dejanos tu mail y te avisamos antes que nadie sobre nuevos desarrollos y oportunidades de inversión.</p>
+      </div>
+      <form class="nl-form reveal d1" id="nlForm" novalidate>
+        <div class="nl-field">
+          <input type="email" id="nlEmail" name="email" placeholder="Tu email" required>
+          <button type="submit" class="btn btn--solid">Suscribirme</button>
+        </div>
+        <p class="nl-msg" id="nlMsg" role="status"></p>
+        <p class="nl-note">No enviamos spam. Podés darte de baja cuando quieras.</p>
+      </form>
+    </div>
+  </section>
+
   <!-- ===================== CONTACTO ===================== -->
   <section class="contact" id="contacto">
     <div class="wrap contact__grid">
@@ -277,6 +328,6 @@
     </div>
   </footer>
 
-  <script src="script.js?v=99"></script>
+  <script src="script.js?v=100"></script>
 </body>
 </html>
