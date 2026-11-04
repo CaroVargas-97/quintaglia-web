@@ -755,6 +755,17 @@ a.project { text-decoration:none; color:inherit; }
 .theme-3df .pp-loc .eyebrow::before, .theme-3df .pp-finance .eyebrow::before { background:var(--mink); }
 .theme-3df .fin-stats > div { border-top-color:rgba(239,233,221,.22); }
 .theme-3df .fin-stats .fl { color:var(--mink); }
+/* Tarjetas de ubicación sobre fondo oscuro (3DF): texto en claro */
+.theme-3df .loc-grid { border-color:rgba(255,255,255,.22); }
+.theme-3df .loc-card { border-color:rgba(255,255,255,.22); }
+.theme-3df .loc-card svg { stroke:var(--mink); }
+.theme-3df .loc-card__name { color:#fff; }
+.theme-3df .loc-card__more { color:var(--mink); }
+.theme-3df .loc-card:hover { background:rgba(255,255,255,.07); }
+.theme-3df .loc-card.active { background:#fff; }
+.theme-3df .loc-card.active svg { stroke:var(--accent); }
+.theme-3df .loc-card.active .loc-card__name { color:var(--ink); }
+.theme-3df .loc-card.active .loc-card__more { color:var(--accent); }
 /* Estado del proyecto: línea de tiempo (Planificación → … → Finalizado) */
 .pp-status { padding-block:clamp(2.6rem,6vw,4.5rem); background:var(--paper); }
 .pp-status .eyebrow { margin-bottom:clamp(1.6rem,4vw,2.4rem); display:inline-block; }
