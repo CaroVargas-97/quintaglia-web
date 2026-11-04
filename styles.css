@@ -968,9 +968,6 @@ a.project { text-decoration:none; color:inherit; }
 .theme-brand h1::first-letter, .theme-3df h1::first-letter {
   font-family: "Harume Roman", "Italiana", serif;
 }
-/* Intercalado: letras sueltas en Harume dentro de un título en Marcellus
-   (sello de marca de quintaglia.com). */
-.theme-brand .hr, .theme-3df .hr { font-family: "Harume Roman", "Italiana", serif; }
 /* Títulos de sección (h2/h3/h4): Marcellus limpio (legible y delicado), con
    solo la PRIMERA LETRA en Harume como guiño de marca. La Harume fuerte queda
    reservada a los heros. */
