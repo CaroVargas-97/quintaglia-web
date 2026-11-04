@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Hanken+Grotesk:wght@300;400;500;600&family=Inter:wght@300;400;500&family=Italiana&family=Marcellus&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="../assets/logo/mono-dark.png">
   <link rel="apple-touch-icon" href="../assets/logo/mono-dark.png">
-  <link rel="stylesheet" href="../styles.css?v=100">
+  <link rel="stylesheet" href="../styles.css?v=101">
 </head>
 <body class="theme-3df">
 
@@ -228,14 +228,14 @@
         </div>
         <div class="typ-card">
           <h3>2 Ambientes</h3>
-          <p class="typ-m2">49 a 70 m² · con balcón</p>
+          <p class="typ-m2">49 a 73 m² · con balcón</p>
           <p class="typ-from"><small>Desde</small>U$S 132.967</p>
           <p class="typ-desc">Amplios ambientes con balcón y buenas visuales. Ideales para vivienda.</p>
           <a href="#disponibilidad" class="link-arrow">Ver disponibilidad <span class="ar">→</span></a>
         </div>
         <div class="typ-card">
           <h3>Semipisos y pisos altos</h3>
-          <p class="typ-m2">100 a 124 m² · 3 y 4 amb.</p>
+          <p class="typ-m2">95 a 125 m² · 3 y 4 amb.</p>
           <p class="typ-from"><small>Pisos 10 · 11 · 12</small>Consultar</p>
           <p class="typ-desc">Unidades exclusivas con grandes expansiones en los niveles superiores.</p>
           <a href="#contacto" class="link-arrow">Consultar <span class="ar">→</span></a>
@@ -263,10 +263,10 @@
           <span><strong>Monoambiente</strong></span><span>35 a 36 m²</span><span class="units-price">Desde USD 90.000</span>
         </div>
         <div class="units-row">
-          <span><strong>2 ambientes</strong></span><span>49 a 70 m²</span><span class="units-price">Desde USD 132.967</span>
+          <span><strong>2 ambientes</strong></span><span>49 a 73 m²</span><span class="units-price">Desde USD 132.967</span>
         </div>
         <div class="units-row">
-          <span><strong>3 y 4 ambientes</strong></span><span>100 a 124 m²</span><span class="units-price">Consultar</span>
+          <span><strong>3 y 4 ambientes</strong></span><span>95 a 125 m²</span><span class="units-price">Consultar</span>
         </div>
       </div>
     </div>
@@ -304,7 +304,7 @@
   </section>
   <script>
   (function(){
-    const M={A:{t:'2 ambientes',c:46.16,o:60.12},B:{t:'Monoambiente',c:31.26,o:35.45},C:{t:'Monoambiente',c:31.39,o:35.50},D:{t:'Monoambiente',c:31.41,o:35.51},E:{t:'2 ambientes',c:42.62,o:49.67}};
+    const M={A:{t:'2 ambientes',c:45.49,o:59.33},B:{t:'Monoambiente',c:31.32,o:36.05},C:{t:'Monoambiente',c:31.32,o:35.70},D:{t:'Monoambiente',c:31.32,o:35.69},E:{t:'2 ambientes',c:41.36,o:48.99}};
     function mk(id,st,price){const b=Object.assign({id},M[id]); b.st=st; if(st==='disp')b.total=price; if(st==='cash')b.cash=price; return b;}
     const floors=[
       {n:1,u:[mk('A','disp',160941),mk('B','vendido'),mk('C','disp',95034),mk('D','disp',95060),mk('E','disp',132967)]},
@@ -316,9 +316,9 @@
       {n:7,u:[mk('A','vendido'),mk('B','disp',116985),mk('C','vendido'),mk('D','vendido'),mk('E','vendido')]},
       {n:8,u:[mk('A','reservado'),mk('B','disp',118758),mk('C','cash',103000),mk('D','disp',118959),mk('E','disp',166395)]},
       {n:9,u:[mk('A','vendido'),mk('B','na'),mk('C','na'),mk('D','na'),mk('E','na')]},
-      {n:10,u:[{id:'A',t:'4 ambientes',c:82.44,o:100.61,st:'vendido'},{id:'B',t:'Monoambiente',c:31.23,o:35.34,st:'na'},{id:'C',t:'Monoambiente',c:31.41,o:35.51,st:'na'},{id:'D',t:'2 ambientes',c:42.62,o:49.67,st:'na'}]},
-      {n:11,u:[{id:'A',t:'3 ambientes',c:83.72,o:123.78,st:'na'},{id:'B',t:'2 ambientes',c:54.46,o:74.16,st:'na'}]},
-      {n:12,u:[{id:'A',t:'3 ambientes',c:70.10,o:107.17,st:'na'}]}
+      {n:10,u:[{id:'A',t:'3 ambientes',c:81.88,o:95.72,st:'vendido'},{id:'B',t:'Monoambiente',c:31.32,o:35.70,st:'na'},{id:'C',t:'Monoambiente',c:31.32,o:35.69,st:'na'},{id:'D',t:'2 ambientes',c:41.36,o:48.99,st:'na'}]},
+      {n:11,u:[{id:'A',t:'3 ambientes',c:84.22,o:125.34,st:'na'},{id:'B',t:'2 ambientes',c:54.03,o:72.63,st:'na'}]},
+      {n:12,u:[{id:'A',t:'3 ambientes',c:70.54,o:105.44,st:'na'}]}
     ];
     const fmt=n=>'U$S '+Math.round(n).toLocaleString('es-AR');
     const m2=n=>n.toLocaleString('es-AR',{minimumFractionDigits:2,maximumFractionDigits:2});
@@ -531,6 +531,6 @@
   </footer>
 
   <div class="lightbox" id="lightbox"><img src="" alt=""></div>
-  <script src="../script.js?v=100"></script>
+  <script src="../script.js?v=101"></script>
 </body>
 </html>
