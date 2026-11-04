@@ -755,6 +755,19 @@ a.project { text-decoration:none; color:inherit; }
 .theme-3df .pp-loc .eyebrow::before, .theme-3df .pp-finance .eyebrow::before { background:var(--mink); }
 .theme-3df .fin-stats > div { border-top-color:rgba(239,233,221,.22); }
 .theme-3df .fin-stats .fl { color:var(--mink); }
+/* Estado del proyecto: línea de tiempo (Planificación → … → Finalizado) */
+.pp-status { padding-block:clamp(2.6rem,6vw,4.5rem); background:var(--paper); }
+.pp-status .eyebrow { margin-bottom:clamp(1.6rem,4vw,2.4rem); display:inline-block; }
+.status-line { list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(4,1fr); gap:0; position:relative; }
+.status-line::before { content:""; position:absolute; top:7px; left:0; right:0; height:1.5px; background:var(--line); }
+.status-line li { position:relative; padding-top:1.5rem; text-align:left; }
+.status-line .dot { position:absolute; top:0; left:0; width:15px; height:15px; border-radius:50%; background:var(--paper); border:1.5px solid var(--line); box-shadow:0 0 0 4px var(--paper); }
+.status-line .lbl { font-family:var(--sans); font-size:clamp(.72rem,1.4vw,.9rem); letter-spacing:.04em; color:#9b958b; }
+.status-line li.is-done .dot { background:var(--accent); border-color:var(--accent); }
+.status-line li.is-done .lbl { color:var(--ink); }
+.status-line li.is-current .dot { background:var(--accent); border-color:var(--accent); box-shadow:0 0 0 4px var(--paper), 0 0 0 7px color-mix(in srgb, var(--accent) 28%, transparent); }
+.status-line li.is-current .lbl { color:var(--accent); font-weight:600; }
+@media (max-width:620px){ .status-line { grid-template-columns:1fr; gap:1.1rem; } .status-line::before { top:0; bottom:0; left:7px; right:auto; width:1.5px; height:auto; } .status-line li{ padding-top:0; padding-left:1.8rem; } .status-line .dot{ box-shadow:0 0 0 4px var(--paper); } }
 @media (max-width:860px){ .pp-intro__wrap { grid-template-columns:1fr; gap:1.8rem; } .pp-intro__wrap .pp-intro__img{ aspect-ratio:4/3; } }
 .theme-wood .pp-specs   { background: var(--nude); }                 /* crema */
 .theme-wood .pp-gal     { background: var(--paper); color: var(--ink); }
@@ -955,6 +968,9 @@ a.project { text-decoration:none; color:inherit; }
 .theme-brand h1::first-letter, .theme-3df h1::first-letter {
   font-family: "Harume Roman", "Italiana", serif;
 }
+/* Intercalado: letras sueltas en Harume dentro de un título en Marcellus
+   (sello de marca de quintaglia.com). */
+.theme-brand .hr, .theme-3df .hr { font-family: "Harume Roman", "Italiana", serif; }
 /* Títulos de sección (h2/h3/h4): Marcellus limpio (legible y delicado), con
    solo la PRIMERA LETRA en Harume como guiño de marca. La Harume fuerte queda
    reservada a los heros. */
