@@ -2,6 +2,10 @@
    QUINTAGLIA — interacciones
 =========================================================== */
 (function () {
+  /* --- Arrancar siempre arriba al cargar (salvo que la URL tenga ancla #) --- */
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  window.addEventListener('load', () => { if (!location.hash) window.scrollTo(0, 0); });
+
   const nav = document.getElementById('nav');
   const toggle = document.getElementById('navToggle');
   const menu = document.getElementById('navMenu');
@@ -29,6 +33,18 @@
     });
   }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  /* Fallback: en algunos contextos (iframe de preview, observer que no dispara)
+     el contenido .reveal quedaría invisible. A los 1.2s mostramos lo que ya
+     está en viewport para que la página nunca quede en blanco. */
+  setTimeout(() => {
+    document.querySelectorAll('.reveal:not(.in)').forEach(el => {
+      const r = el.getBoundingClientRect();
+      if (r.top < (window.innerHeight || document.documentElement.clientHeight)) {
+        el.classList.add('in');
+      }
+    });
+  }, 1200);
 
   /* --- Parallax suave en el hero --- */
   const heroImg = document.getElementById('heroImg');
@@ -103,5 +119,21 @@
     msg.style.color = '#2b5e35';
     msg.textContent = '¡Gracias, ' + nombre.split(' ')[0] + '! Recibimos tu consulta y te contactaremos pronto.';
     form.reset();
+  });
+
+  /* --- Newsletter (demo, sin backend) --- */
+  const nlForm = document.getElementById('nlForm');
+  const nlMsg = document.getElementById('nlMsg');
+  if (nlForm) nlForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const email = (document.getElementById('nlEmail').value || '').trim();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      nlMsg.style.color = '#7a2d2d';
+      nlMsg.textContent = 'Ingresá un email válido.';
+      return;
+    }
+    nlMsg.style.color = '';
+    nlMsg.textContent = '¡Listo! Te sumamos a la lista. Pronto vas a tener novedades.';
+    nlForm.reset();
   });
 })();

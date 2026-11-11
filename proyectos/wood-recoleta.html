@@ -8,14 +8,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles.css?v=48">
+  <link rel="icon" type="image/png" href="../assets/logo/mono-dark.png">
+  <link rel="apple-touch-icon" href="../assets/logo/mono-dark.png">
+  <link rel="stylesheet" href="../styles.css?v=106">
 </head>
 <body class="theme-wood">
 
   <!-- NAV -->
   <nav class="nav wood-nav" id="nav">
     <a href="#top" class="wood-brand" aria-label="WOOD Recoleta">WOOD<small>Recoleta</small></a>
-    <a href="#contacto" class="btn">Consultar</a>
+    <div class="wood-nav__right">
+      <a href="../index.html" class="wood-nav__home">← Quintaglia</a>
+      <a href="#contacto" class="btn">Consultar</a>
+    </div>
   </nav>
 
   <!-- HERO -->
@@ -64,7 +69,7 @@
         <div class="loc-grid">
           <button class="loc-card active" data-target="l-comercios">
             <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
-            <span class="loc-card__name">Comercios & mercado</span><span class="loc-card__more">Ver cercanos</span>
+            <span class="loc-card__name">Comercios y mercado</span><span class="loc-card__more">Ver cercanos</span>
           </button>
           <button class="loc-card" data-target="l-educacion">
             <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 4 2 9l10 5 10-5-10-5z"/><path d="M6 11v4c0 1.6 2.7 3 6 3s6-1.4 6-3v-4"/></svg>
@@ -84,11 +89,11 @@
           </button>
           <button class="loc-card" data-target="l-transporte">
             <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="13" rx="3"/><path d="M5 11h14"/><circle cx="9" cy="14" r="1"/><circle cx="15" cy="14" r="1"/><path d="M8 20l-2 2M16 20l2 2"/></svg>
-            <span class="loc-card__name">Transporte & subte</span><span class="loc-card__more">Ver cercanos</span>
+            <span class="loc-card__name">Transporte y subte</span><span class="loc-card__more">Ver cercanos</span>
           </button>
           <button class="loc-card" data-target="l-cultura">
             <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M3 9l9-5 9 5"/><path d="M5 9v8M10 9v8M14 9v8M19 9v8"/><path d="M3 20h18"/></svg>
-            <span class="loc-card__name">Cultura & teatros</span><span class="loc-card__more">Ver cercanos</span>
+            <span class="loc-card__name">Cultura y teatros</span><span class="loc-card__more">Ver cercanos</span>
           </button>
           <button class="loc-card" data-target="l-gastro">
             <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M7 3v7a2 2 0 0 0 4 0V3M9 10v11"/><path d="M16 3c-1.5 1-2 3-2 5s.5 3 2 3v10"/></svg>
@@ -101,7 +106,7 @@
             <button class="loc-modal__x" id="locModalX" aria-label="Cerrar">&times;</button>
           <div class="loc-detail__panels">
             <div class="tab-panel active" id="l-comercios">
-              <div class="loc-cat__name">Comercios & mercado</div>
+              <div class="loc-cat__name">Comercios y mercado</div>
               <p class="loc-cat__sub">A pocos pasos · distancias aproximadas a pie</p>
               <ul class="loc-list">
                 <li><span>Locales y tiendas de Recoleta y Barrio Norte</span><span class="dist">a pasos</span></li>
@@ -179,7 +184,7 @@
               <a class="loc-maps" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=hospitales%20y%20cl%C3%ADnicas%20cerca%20de%20Larrea%201180%2C%20Recoleta%2C%20Buenos%20Aires"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6-5.3-6-10a6 6 0 0 1 12 0c0 4.7-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg> Ver en Google Maps</a>
             </div>
             <div class="tab-panel" id="l-transporte">
-              <div class="loc-cat__name">Transporte & subte</div>
+              <div class="loc-cat__name">Transporte y subte</div>
               <p class="loc-cat__sub">A pocos pasos · distancias aproximadas a pie</p>
               <ul class="loc-list">
                 <li><span>Colectivos: 12, 39, 41, 57, 60, 61, 62, 64, 68, 95, 101, 106, 109, 111, 118, 132, 140, 152, 194</span><span class="dist">a pasos</span></li>
@@ -189,7 +194,7 @@
               <a class="loc-maps" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=estaciones%20de%20subte%20y%20colectivos%20cerca%20de%20Larrea%201180%2C%20Recoleta%2C%20Buenos%20Aires"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6-5.3-6-10a6 6 0 0 1 12 0c0 4.7-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg> Ver en Google Maps</a>
             </div>
             <div class="tab-panel" id="l-cultura">
-              <div class="loc-cat__name">Cultura & teatros</div>
+              <div class="loc-cat__name">Cultura y teatros</div>
               <p class="loc-cat__sub">A pocos pasos · distancias aproximadas a pie</p>
               <ul class="loc-list">
                 <li><span>Village Recoleta · cines</span><span class="dist">700 m</span></li>
@@ -253,6 +258,19 @@
     </div>
   </section>
 
+  <!-- ESTADO DEL PROYECTO -->
+  <section class="pp-status">
+    <div class="wrap">
+      <span class="eyebrow reveal">Estado del proyecto</span>
+      <ol class="status-line reveal d1" aria-label="Etapa actual: En pozo">
+        <li class="is-done"><span class="dot"></span><span class="lbl">Planificación</span></li>
+        <li class="is-current"><span class="dot"></span><span class="lbl">En pozo</span></li>
+        <li><span class="dot"></span><span class="lbl">En construcción</span></li>
+        <li><span class="dot"></span><span class="lbl">Finalizado</span></li>
+      </ol>
+    </div>
+  </section>
+
   <!-- DISPONIBILIDAD -->
   <section class="pp-avail" id="disponibilidad">
     <div class="wrap">
@@ -301,7 +319,7 @@
       {n:8,prox:true,u:[]},
       {n:9,prox:true,u:[]}
     ];
-    const FY={1:[72.5,6.5],2:[64.5,6.5],3:[56.5,6.5],4:[48.5,6.5],5:[40.5,6.5],6:[32.5,6.5],7:[26,6],8:[19,6],9:[11,6.5]};
+    const FY={1:[82.9,6],2:[75.5,6.5],3:[68,6.5],4:[60.3,6.5],5:[52.7,6.5],6:[45,6.5],7:[37.4,6.5],8:[29.8,6.5],9:[22.1,6.5]};
     const fmt=n=>'U$S '+Math.round(n).toLocaleString('es-AR');
     const m2=n=>n.toLocaleString('es-AR',{minimumFractionDigits:2,maximumFractionDigits:2});
     function planKey(n,id){ if(id==='A')return 'A'; if(id==='B')return n<=5?'B15':'B6'; if(id==='C')return n===1?'C1':(n<=5?'Cest':'C610'); if(id==='D')return 'D'; return 'A'; }
@@ -449,7 +467,7 @@
         <div class="wood-brand">WOOD<small>Recoleta</small></div>
         <div class="wood-foot__right">
           <p class="wood-foot__addr">Larrea 1180 · Recoleta · Buenos Aires</p>
-          <p class="wood-foot__dev">Desarrolla <img src="../assets/logo/logo-light.png" alt="Quintaglia"></p>
+          <div class="wood-foot__dev"><span class="wfd-label">Desarrolla</span><a href="../index.html" aria-label="Ir al inicio de Quintaglia"><img class="wood-foot__logo" src="../assets/logo/logo-light.png" alt="Quintaglia"></a></div>
         </div>
       </div>
       <div class="footer__bottom">
@@ -460,6 +478,6 @@
   </footer>
 
   <div class="lightbox" id="lightbox"><img src="" alt=""></div>
-  <script src="../script.js?v=48"></script>
+  <script src="../script.js?v=106"></script>
 </body>
 </html>

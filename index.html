@@ -7,10 +7,12 @@
   <meta name="description" content="Quintaglia Desarrollos Inmobiliarios. Arquitectura que trasciende lo constructivo para transformarse en bienestar cotidiano. Diseño, excelencia y materiales nobles en Buenos Aires." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=48">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Hanken+Grotesk:wght@300;400;500;600&family=Inter:wght@300;400;500&family=Italiana&family=Marcellus&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/logo/mono-dark.png">
+  <link rel="apple-touch-icon" href="assets/logo/mono-dark.png">
+  <link rel="stylesheet" href="styles.css?v=106">
 </head>
-<body>
+<body class="theme-brand">
 
   <!-- ===================== NAV ===================== -->
   <nav class="nav" id="nav">
@@ -32,19 +34,22 @@
   </nav>
 
   <!-- ===================== HERO ===================== -->
-  <header class="hero" id="top">
-    <div class="hero__bg"><img src="assets/img/3df-pileta.jpg?2" alt="Quintaglia — vivir en altura" id="heroImg"></div>
-    <div class="hero__inner">
-      <h1 class="reveal">Arquitectura que <em>trasciende</em> lo cotidiano.</h1>
-      <div class="hero__meta reveal d1">
-        <span class="hero__tag">Scrivendo il futuro</span>
-        <div class="hero__ctas">
-          <a href="#proyectos" class="btn btn--light">Ver proyectos</a>
-          <a href="#contacto" class="btn btn--light">Contacto</a>
-        </div>
+  <header class="pp-hero hero--home" id="top">
+    <div class="pp-hero__bg"><img src="assets/img/3df-pileta.jpg?2" alt="Quintaglia Desarrollos Inmobiliarios" id="heroImg"></div>
+    <div class="pp-hero__inner">
+      <span class="eyebrow pp-hero__eyebrow reveal">Desarrollos Inmobiliarios · Buenos Aires</span>
+      <h1 class="reveal d1">Arquitectura que trasciende lo cotidiano.</h1>
+      <p class="pp-hero__loc reveal d1">Scrivendo il futuro</p>
+      <div class="pp-hero__stats reveal d2">
+        <div><span class="k">Desarrollos</span><span class="v">3 de Febrero · WOOD</span></div>
+        <div><span class="k">Zonas</span><span class="v">Núñez · Recoleta</span></div>
+        <div><span class="k">Enfoque</span><span class="v">Diseño y excelencia</span></div>
+      </div>
+      <div class="pp-hero__ctas reveal d3">
+        <a href="#proyectos" class="btn btn--light">Ver proyectos</a>
+        <a href="#contacto" class="btn btn--light">Contacto</a>
       </div>
     </div>
-    <div class="hero__scroll">Scroll</div>
   </header>
 
   <!-- ===================== MANIFIESTO ===================== -->
@@ -61,14 +66,10 @@
           — una experiencia más plena, más auténtica, más humana.
         </p>
         <div class="reveal d2">
-          <p class="lead" style="margin-bottom:1.2rem">
+          <p class="lead">
             Nuestra identidad reúne calidez, sofisticación y confiabilidad. Cada proyecto es el
             resultado de planificación, precisión y una búsqueda genuina de la excelencia.
           </p>
-          <div class="adn" aria-label="Valores de la marca">
-            <span>Innovación</span><span>Sofisticación</span><span>Excelencia</span>
-            <span>Calidez</span><span>Elegancia</span><span>Precisión</span><span>Confiabilidad</span>
-          </div>
         </div>
       </div>
     </div>
@@ -205,6 +206,25 @@
     </div>
   </section>
 
+  <!-- ===================== NEWSLETTER ===================== -->
+  <section class="newsletter">
+    <div class="wrap nl-grid">
+      <div class="nl-copy reveal">
+        <span class="eyebrow">Novedades</span>
+        <h2 style="margin-top:1rem">Enterate de los próximos lanzamientos.</h2>
+        <p>Dejanos tu mail y te avisamos antes que nadie sobre nuevos desarrollos y oportunidades de inversión.</p>
+      </div>
+      <form class="nl-form reveal d1" id="nlForm" novalidate>
+        <div class="nl-field">
+          <input type="email" id="nlEmail" name="email" placeholder="Tu email" required>
+          <button type="submit" class="btn btn--solid">Suscribirme</button>
+        </div>
+        <p class="nl-msg" id="nlMsg" role="status"></p>
+        <p class="nl-note">No enviamos spam. Podés darte de baja cuando quieras.</p>
+      </form>
+    </div>
+  </section>
+
   <!-- ===================== CONTACTO ===================== -->
   <section class="contact" id="contacto">
     <div class="wrap contact__grid">
@@ -276,6 +296,6 @@
     </div>
   </footer>
 
-  <script src="script.js?v=48"></script>
+  <script src="script.js?v=106"></script>
 </body>
 </html>

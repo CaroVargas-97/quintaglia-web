@@ -235,8 +235,8 @@ section { position: relative; }
 .manifesto__grid { display: grid; grid-template-columns: 1fr; gap: clamp(2.4rem, 5vw, 4rem); }
 .manifesto__statement {
   font-family: var(--serif); font-weight: 300;
-  font-size: clamp(1.9rem, 4.6vw, 4rem); line-height: 1.12; letter-spacing: -.015em;
-  max-width: 22ch;
+  font-size: clamp(1.6rem, 3.2vw, 2.7rem); line-height: 1.18; letter-spacing: -.01em;
+  max-width: 24ch;
 }
 .manifesto__statement em { font-style: italic; color: var(--accent); }
 .manifesto__cols { display: grid; grid-template-columns: repeat(2, 1fr); gap: clamp(1.6rem, 4vw, 3.5rem); align-items: start; }
@@ -244,8 +244,8 @@ section { position: relative; }
 
 .adn { display: flex; flex-wrap: wrap; gap: .55rem 0; margin-top: 1.2rem; }
 .adn span {
-  font-family: var(--serif); font-size: clamp(1.1rem, 1.7vw, 1.45rem); font-style: italic;
-  color: var(--ink); white-space: nowrap;
+  font-family: var(--sans); font-size: clamp(.9rem, 1.3vw, 1.05rem); font-style: normal;
+  letter-spacing: .02em; color: var(--ink); white-space: nowrap;
 }
 .adn span::after { content: "·"; color: var(--mink-deep); margin: 0 .55em; }
 .adn span:last-child::after { content: ""; }
@@ -255,7 +255,7 @@ section { position: relative; }
 =========================================================== */
 .projects { padding-block: var(--section-y); background: var(--nude); }
 .section-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 2rem; flex-wrap: wrap; margin-bottom: clamp(2.6rem, 5vw, 4.5rem); }
-.section-head h2 { font-size: clamp(2.2rem, 5vw, 4rem); }
+.section-head h2 { font-size: clamp(1.8rem, 3.4vw, 2.8rem); }
 .section-head p { max-width: 38ch; color: #42403c; }
 
 .project {
@@ -276,7 +276,7 @@ section { position: relative; }
 .project--reverse { grid-template-columns: .85fr 1.15fr; }
 .project--reverse .project__media { order: 2; }
 .project__num { font-family: var(--serif); font-size: 1rem; color: var(--accent); letter-spacing: .1em; }
-.project h3 { font-size: clamp(2rem, 4.2vw, 3.4rem); margin: .35rem 0 .2rem; }
+.project h3 { font-size: clamp(1.5rem, 2.8vw, 2.2rem); margin: .35rem 0 .2rem; }
 .project__loc { font-size: .8rem; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); }
 .project__desc { margin: 1.3rem 0 1.6rem; max-width: 42ch; color: #3c3a36; }
 .project__specs { display: flex; flex-wrap: wrap; gap: 1.8rem 2.6rem; margin-bottom: 1.9rem; }
@@ -289,7 +289,7 @@ section { position: relative; }
 =========================================================== */
 .philo { padding-block: var(--section-y); background: var(--ink); color: var(--nude); }
 .philo__head { max-width: 30ch; margin-bottom: clamp(2.6rem, 5vw, 4.5rem); }
-.philo__head h2 { font-size: clamp(2.2rem, 5vw, 4rem); }
+.philo__head h2 { font-size: clamp(1.8rem, 3.4vw, 2.8rem); }
 .philo__head .eyebrow { color: var(--mink); }
 .philo__head .eyebrow::before { background: var(--mink); }
 .philo__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(1.6rem, 3vw, 3rem); }
@@ -303,7 +303,7 @@ section { position: relative; }
 =========================================================== */
 .interiors { padding-block: var(--section-y); background: var(--paper); }
 .interiors__head { text-align: center; max-width: 44ch; margin: 0 auto clamp(2.4rem, 5vw, 4rem); }
-.interiors__head h2 { font-size: clamp(2.2rem, 5vw, 4rem); }
+.interiors__head h2 { font-size: clamp(1.8rem, 3.4vw, 2.8rem); }
 .gallery {
   display: grid; grid-template-columns: repeat(12, 1fr); gap: clamp(.7rem, 1.4vw, 1.1rem);
   grid-auto-rows: 1fr;
@@ -325,7 +325,7 @@ section { position: relative; }
 =========================================================== */
 .team { padding-block: var(--section-y); background: var(--navy); color: var(--nude); }
 .team__grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(2.4rem, 6vw, 6rem); align-items: center; }
-.team__head h2 { font-size: clamp(2.2rem, 5vw, 3.6rem); color: var(--white); }
+.team__head h2 { font-size: clamp(1.8rem, 3.2vw, 2.6rem); color: var(--white); }
 .team__head .eyebrow { color: var(--mink); } .team__head .eyebrow::before { background: var(--mink); }
 .team__head p { color: #c3c9ce; max-width: 40ch; margin-top: 1.4rem; }
 .partners { display: grid; gap: clamp(1.2rem, 2vw, 1.6rem); }
@@ -343,7 +343,7 @@ section { position: relative; }
 =========================================================== */
 .contact { padding-block: var(--section-y); background: var(--mink); color: var(--ink); }
 .contact__grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2.4rem, 6vw, 6rem); }
-.contact__head h2 { font-size: clamp(2.4rem, 5.5vw, 4.4rem); max-width: 14ch; }
+.contact__head h2 { font-size: clamp(1.9rem, 3.8vw, 3rem); max-width: 16ch; }
 .contact__head .eyebrow { color: var(--ink-soft); } .contact__head .eyebrow::before { background: var(--ink-soft); }
 .contact__details { margin-top: clamp(1.8rem, 4vw, 3rem); display: grid; gap: 1.4rem; }
 .contact__details a { display: flex; align-items: center; gap: 1rem; font-size: 1.05rem; width: fit-content; }
@@ -563,9 +563,9 @@ a.project { text-decoration:none; color:inherit; }
 }
 
 /* Tipologías en tarjetas (sin planta) */
-.typ-cards { display:grid; grid-template-columns:repeat(2,1fr); gap:clamp(1rem,2vw,1.6rem); }
-.typ-card { border:1px solid var(--line); border-radius:4px; padding:clamp(1.6rem,3vw,2.4rem); background:var(--white); transition:transform .5s var(--ease), box-shadow .5s var(--ease); }
-.typ-card:hover { transform:translateY(-4px); box-shadow:0 24px 60px rgba(30,30,30,.08); }
+.typ-cards { display:grid; grid-template-columns:repeat(3,1fr); gap:clamp(1rem,2vw,1.6rem); }
+.typ-card { border:1px solid rgba(30,30,30,.05); border-radius:4px; padding:clamp(1.6rem,3vw,2.4rem); background:var(--white); box-shadow:0 14px 40px rgba(30,30,30,.06); transition:transform .5s var(--ease), box-shadow .5s var(--ease); }
+.typ-card:hover { transform:translateY(-4px); box-shadow:0 24px 60px rgba(30,30,30,.1); }
 .typ-card .cat { font-size:.68rem; letter-spacing:.2em; text-transform:uppercase; color:var(--accent); }
 .typ-card h3 { font-size:clamp(1.6rem,2.6vw,2.1rem); margin:.5rem 0 1.1rem; }
 .typ-card ul { list-style:none; display:grid; gap:.7rem; }
@@ -631,7 +631,7 @@ a.project { text-decoration:none; color:inherit; }
    TIPOLOGÍAS — tarjetas con precio DESDE
 =========================================================== */
 .typ-card .typ-m2 { color:var(--accent); font-size:.95rem; margin-bottom:.2rem; }
-.typ-card .typ-from { font-family:var(--serif); font-size:clamp(1.8rem,3vw,2.3rem); color:var(--ink); margin:.8rem 0 1rem; line-height:1.1; }
+.typ-card .typ-from { font-family:var(--serif); font-size:clamp(1.8rem,3vw,2.3rem); color:var(--ink); margin:.8rem 0 1.4rem; padding-bottom:1.4rem; border-bottom:1px solid var(--line); line-height:1.1; }
 .typ-card .typ-from small { display:block; font-family:var(--sans); font-size:.6rem; letter-spacing:.24em; text-transform:uppercase; color:var(--accent); margin-bottom:.2rem; }
 .typ-card .typ-desc { font-size:.92rem; color:#3c3a36; margin-bottom:1.4rem; min-height:3.2em; }
 .typ-card .link-arrow { color:var(--ink); }
@@ -699,7 +699,7 @@ a.project { text-decoration:none; color:inherit; }
 /* ===========================================================
    TEMA WOOD — identidad verde + tipografía Fraunces
 =========================================================== */
-/* Tokens WOOD = paleta de la página de referencia (teamscaglia) */
+/* Tokens WOOD = paleta verde del tema */
 .theme-wood {
   --sans: "Montserrat", -apple-system, BlinkMacSystemFont, sans-serif;
   --ink:    #2d322b;   /* texto verde-grisáceo oscuro */
@@ -717,6 +717,106 @@ a.project { text-decoration:none; color:inherit; }
 /* Fondos de sección según la referencia */
 .theme-wood .pp-intro   { background: var(--nude); }                 /* crema */
 .theme-wood .pp-typ     { background: var(--nude); }                 /* crema */
+/* WOOD — tipología igual a la referencia: destacados en verde + escala compacta */
+.theme-wood .pp-typ h2 { color:var(--accent); }
+.theme-wood .typ-card { padding:clamp(1.4rem,2.5vw,2rem); }
+.theme-wood .typ-card h3 { color:var(--accent); font-size:clamp(1.35rem,2.2vw,1.75rem); }
+.theme-wood .typ-card .typ-from { font-family:var(--sans); font-weight:700; font-size:clamp(1.25rem,1.9vw,1.55rem); letter-spacing:-.01em; color:var(--accent); }
+/* 3DF — misma receta de tipología que WOOD, con el acento cálido */
+.theme-3df .pp-typ h2 { color:var(--accent); }
+.theme-3df .typ-card { padding:clamp(1.4rem,2.5vw,2rem); }
+.theme-3df .typ-card h3 { color:var(--accent); font-size:clamp(1.35rem,2.2vw,1.75rem); }
+.theme-3df .typ-card .typ-from { font-family:var(--sans); font-weight:700; font-size:clamp(1.25rem,1.9vw,1.55rem); letter-spacing:-.01em; color:var(--accent); }
+
+/* ===== 3 DE FEBRERO — réplica de la página de referencia ===== */
+/* Hero: lockup de marca QUINTAGLIA + 3 DE FEBRERO 2781 */
+.pp-hero__brand { font-size:clamp(3rem,11vw,8.5rem); line-height:.92; margin:0; }
+.pp-hero__project { font-family:var(--sans); font-weight:300; font-size:clamp(.95rem,2.6vw,1.8rem);
+  letter-spacing:.42em; text-transform:uppercase; color:var(--nude); margin:.4rem 0 1.3rem; }
+.pp-hero__loc { display:flex; align-items:center; }
+/* Intro "Habitar": imagen a la izquierda, texto a la derecha */
+.pp-intro__wrap { display:grid; grid-template-columns:1fr 1fr; gap:clamp(2rem,6vw,5rem); align-items:center; }
+.pp-intro__wrap .pp-intro__img { margin-top:0; aspect-ratio:4/5; }
+.pp-intro__body .eyebrow { margin-bottom:1rem; display:inline-block; }
+.pp-intro__sub { font-family:"Cormorant Garamond","Times New Roman",serif; font-style:italic;
+  font-size:clamp(1.3rem,2.6vw,2rem); color:var(--accent); margin:-.2rem 0 1.5rem; letter-spacing:.01em; }
+.pp-intro__body p { margin-bottom:1.1rem; }
+.pp-intro__body em { font-style:italic; }
+.pp-intro__link { font-family:var(--sans); font-size:.72rem; letter-spacing:.2em; text-transform:uppercase;
+  border-bottom:1px solid currentColor; padding-bottom:.4rem; display:inline-block; margin-top:1rem; }
+/* CTA "Sumate a Quintaglia" */
+.pp-cta__sub { font-family:"Cormorant Garamond","Times New Roman",serif; font-style:italic;
+  font-size:clamp(1.3rem,2.6vw,2rem); color:var(--mink); margin:-.8rem auto 1.5rem; }
+/* Secciones oscuras (ubicación y financiación) como la referencia */
+.theme-3df .pp-loc, .theme-3df .pp-finance { background:#26251f; color:#efe9dd; }
+.theme-3df .pp-loc h2, .theme-3df .pp-finance h2 { color:#efe9dd; }
+.theme-3df .pp-loc .lead { color:rgba(239,233,221,.82); }
+.theme-3df .pp-loc .eyebrow, .theme-3df .pp-finance .eyebrow { color:var(--mink); }
+.theme-3df .pp-loc .eyebrow::before, .theme-3df .pp-finance .eyebrow::before { background:var(--mink); }
+.theme-3df .fin-stats > div { border-top-color:rgba(239,233,221,.22); }
+.theme-3df .fin-stats .fl { color:var(--mink); }
+/* Tarjetas de ubicación sobre fondo oscuro (3DF): texto en claro */
+.theme-3df .loc-grid { border-color:rgba(255,255,255,.22); }
+.theme-3df .loc-card { border-color:rgba(255,255,255,.22); }
+.theme-3df .loc-card svg { stroke:var(--mink); }
+.theme-3df .loc-card__name { color:#fff; }
+.theme-3df .loc-card__more { color:var(--mink); }
+.theme-3df .loc-card:hover { background:rgba(255,255,255,.07); }
+.theme-3df .loc-card.active { background:#fff; }
+.theme-3df .loc-card.active svg { stroke:var(--accent); }
+.theme-3df .loc-card.active .loc-card__name { color:var(--ink); }
+.theme-3df .loc-card.active .loc-card__more { color:var(--accent); }
+/* Estado del proyecto: línea de tiempo (Planificación → … → Finalizado) */
+.pp-status { padding-block:clamp(2.6rem,6vw,4.5rem); background:var(--paper); }
+.pp-status .eyebrow { margin-bottom:clamp(1.6rem,4vw,2.4rem); display:inline-block; }
+.status-line { list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(4,1fr); gap:0; position:relative; }
+.status-line::before { content:""; position:absolute; top:7px; left:0; right:0; height:1.5px; background:var(--line); }
+.status-line li { position:relative; padding-top:1.5rem; text-align:left; }
+.status-line .dot { position:absolute; top:0; left:0; width:15px; height:15px; border-radius:50%; background:var(--paper); border:1.5px solid var(--line); box-shadow:0 0 0 4px var(--paper); }
+.status-line .lbl { font-family:var(--sans); font-size:clamp(.72rem,1.4vw,.9rem); letter-spacing:.04em; color:#9b958b; }
+.status-line li.is-done .dot { background:var(--accent); border-color:var(--accent); }
+.status-line li.is-done .lbl { color:var(--ink); }
+.status-line li.is-current .dot { background:var(--accent); border-color:var(--accent); box-shadow:0 0 0 4px var(--paper), 0 0 0 7px color-mix(in srgb, var(--accent) 28%, transparent); }
+.status-line li.is-current .lbl { color:var(--accent); font-weight:600; }
+/* Tabla de unidades (Ambientes / Superficie / Precio) */
+.units-table { margin-top:clamp(2.2rem,5vw,3.4rem); border-top:1px solid var(--line); }
+.units-row { display:grid; grid-template-columns:1.2fr 1fr 1fr; gap:1rem; align-items:center; padding:1.1rem 0; border-bottom:1px solid var(--line); }
+.units-row span { font-family:var(--sans); font-size:clamp(.9rem,1.5vw,1.02rem); color:var(--ink); }
+.units-row strong { font-weight:600; }
+.units-row--head span { font-size:.68rem; letter-spacing:.2em; text-transform:uppercase; color:var(--accent); }
+.units-price { font-weight:600; text-align:right; }
+@media (max-width:620px){ .units-row{ grid-template-columns:1fr 1fr; gap:.3rem 1rem; } .units-row span:nth-child(3){ grid-column:1 / -1; } .units-row--head span:nth-child(3){ display:none; } .units-price{ text-align:left; } }
+
+/* ===== Mapa de desarrollos (home) ===== */
+.map-sec { padding-block:var(--section-y); background:var(--paper); }
+.map-grid { display:grid; grid-template-columns:1fr 1fr; gap:clamp(1.4rem,3vw,2.4rem); margin-top:clamp(2rem,4vw,3rem); }
+.map-card { display:block; text-decoration:none; color:inherit; }
+.map-card__frame { position:relative; aspect-ratio:16/10; overflow:hidden; border-radius:4px; border:1px solid var(--line); background:var(--nude); display:grid; place-items:center; }
+.map-card__grid { position:absolute; inset:0; width:100%; height:100%; color:var(--accent); opacity:.22; }
+.map-card__pin { position:relative; z-index:1; width:48px; height:48px; border-radius:50%; background:var(--paper); display:grid; place-items:center; box-shadow:0 6px 20px rgba(60,50,40,.18); transition:transform .4s var(--ease); }
+.map-card__pin svg { width:24px; height:24px; color:var(--accent); }
+.map-card:hover .map-card__pin { transform:translateY(-4px); }
+.map-card__cap { padding-top:1.1rem; }
+.map-card__num { font-family:var(--serif); color:var(--accent); font-size:.9rem; letter-spacing:.1em; }
+.map-card__cap h3 { margin:.2rem 0 .15rem; }
+.map-card__loc { font-family:var(--sans); font-size:.8rem; letter-spacing:.04em; color:#9b958b; display:block; }
+.map-card__link { font-family:var(--sans); font-size:.72rem; letter-spacing:.14em; text-transform:uppercase; color:var(--accent); display:inline-block; margin-top:.7rem; }
+@media (max-width:760px){ .map-grid{ grid-template-columns:1fr; } }
+
+/* ===== Newsletter (home) ===== */
+.newsletter { padding-block:clamp(3rem,7vw,5.5rem); background:var(--nude); }
+.nl-grid { display:grid; grid-template-columns:1fr 1fr; gap:clamp(2rem,5vw,4rem); align-items:center; }
+.nl-copy h2 { font-size:clamp(1.8rem,3.4vw,2.8rem); }
+.nl-copy p { margin-top:1rem; max-width:42ch; color:var(--ink); opacity:.82; }
+.nl-field { display:flex; gap:.8rem; flex-wrap:wrap; }
+.nl-field input { flex:1 1 220px; background:transparent; border:0; border-bottom:1px solid var(--ink); padding:.9rem .2rem; font-family:var(--sans); font-size:1rem; color:var(--ink); }
+.nl-field input::placeholder { color:#9b958b; }
+.nl-field input:focus { outline:none; border-bottom-color:var(--accent); }
+.nl-msg { margin-top:1rem; font-family:var(--sans); font-size:.9rem; color:var(--accent); min-height:1.1em; }
+.nl-note { margin-top:.5rem; font-family:var(--sans); font-size:.75rem; color:#9b958b; }
+@media (max-width:760px){ .nl-grid{ grid-template-columns:1fr; } }
+@media (max-width:620px){ .status-line { grid-template-columns:1fr; gap:1.1rem; } .status-line::before { top:0; bottom:0; left:7px; right:auto; width:1.5px; height:auto; } .status-line li{ padding-top:0; padding-left:1.8rem; } .status-line .dot{ box-shadow:0 0 0 4px var(--paper); } }
+@media (max-width:860px){ .pp-intro__wrap { grid-template-columns:1fr; gap:1.8rem; } .pp-intro__wrap .pp-intro__img{ aspect-ratio:4/3; } }
 .theme-wood .pp-specs   { background: var(--nude); }                 /* crema */
 .theme-wood .pp-gal     { background: var(--paper); color: var(--ink); }
 .theme-wood .pp-avail   { background: var(--paper); }
@@ -795,6 +895,11 @@ a.project { text-decoration:none; color:inherit; }
 .wood-brand { font-family:var(--serif); font-weight:500; font-size:1.55rem; letter-spacing:.14em; line-height:.86; color:var(--nude); text-transform:uppercase; }
 .wood-brand small { display:block; font-family:var(--sans); font-weight:400; font-size:.5rem; letter-spacing:.42em; margin-top:4px; opacity:.92; }
 .nav.scrolled .wood-brand { color:var(--ink); }
+.wood-nav__right { display:flex; align-items:center; gap:clamp(1rem,2.5vw,2rem); }
+.wood-nav__home { font-family:var(--sans); font-size:.72rem; letter-spacing:.16em; text-transform:uppercase; color:var(--nude); opacity:.85; }
+.wood-nav__home:hover { opacity:1; }
+.nav.scrolled .wood-nav__home { color:var(--ink); }
+@media (max-width:600px){ .wood-nav__home { display:none; } }
 
 /* Ubicación — subtítulo itálico */
 .loc-subt { font-family:var(--serif); font-style:italic; font-size:clamp(1.1rem,1.8vw,1.5rem); margin:-.3rem 0 1.3rem; }
@@ -824,34 +929,14 @@ a.project { text-decoration:none; color:inherit; }
 .wood-footer .wood-brand small { font-size:.42em; letter-spacing:.4em; }
 .wood-foot__right { text-align:right; }
 .wood-foot__addr { color:#cdd8c2; font-size:.92rem; }
-.wood-foot__dev { display:flex; align-items:center; gap:.7rem; justify-content:flex-end; margin-top:.9rem; color:#9fae92; font-size:.68rem; letter-spacing:.18em; text-transform:uppercase; }
-.wood-foot__dev img { height:40px; width:auto; }
+.wood-foot__dev { display:flex; flex-direction:column; align-items:flex-end; gap:.6rem; margin-top:1rem; }
+.wfd-label { color:#9fae92; font-size:.68rem; letter-spacing:.18em; text-transform:uppercase; }
+.wood-foot__logo { height:56px; width:auto; display:block; }
 .wood-foot__legal { font-size:.72rem; color:#8fa081; max-width:62ch; text-align:right; }
-@media (max-width:760px){ .wood-foot{ flex-direction:column; align-items:flex-start;} .wood-foot__right,.wood-foot__dev,.wood-foot__legal{ text-align:left; justify-content:flex-start;} }
+@media (max-width:760px){ .wood-foot{ flex-direction:column; align-items:flex-start;} .wood-foot__right,.wood-foot__dev,.wood-foot__legal{ text-align:left; justify-content:flex-start;} .wood-foot__right{ text-align:left; } .wood-foot__dev{ align-items:flex-start; } }
 
 /* Tipologías — nota al pie */
 .pp-typ__foot { margin-top:clamp(2rem,4vw,3rem); font-size:.88rem; color:var(--accent); }
-
-/* Disponibilidad — toggle Fachada / Lista de precios */
-.avail-toggle { display:flex; width:fit-content; margin:clamp(1.4rem,3vw,2.2rem) auto clamp(1.6rem,3vw,2.6rem); border:1px solid var(--line); border-radius:999px; padding:4px; background:var(--white); }
-.avail-toggle button { font-family:var(--sans); font-size:.72rem; font-weight:500; letter-spacing:.06em; color:var(--accent); background:none; border:0; padding:.7em 1.6em; border-radius:999px; cursor:pointer; transition:background .25s var(--ease), color .25s var(--ease); }
-.avail-toggle button.on { background:var(--accent); color:#fff; }
-
-/* Lista de precios (tabla) */
-.pricetab-wrap { overflow-x:auto; }
-.pricetab { width:100%; border-collapse:collapse; font-family:var(--sans); }
-.pricetab th { font-size:.62rem; letter-spacing:.14em; text-transform:uppercase; color:var(--accent); font-weight:600; text-align:left; padding:.95em 1em; border-bottom:1px solid var(--line); white-space:nowrap; }
-.pricetab th.srt { cursor:pointer; user-select:none; } .pricetab th.srt:hover { color:var(--ink); }
-.pricetab th .ar { opacity:.6; font-size:.7em; margin-left:.3em; }
-.pricetab td { padding:1em; border-bottom:1px solid var(--line); font-size:.95rem; color:var(--ink); }
-.pricetab tbody tr.av:hover { background:rgba(64,88,74,.05); }
-.pricetab tr.na td { color:#9a9a92; }
-.pricetab .wl-piso, .pricetab .wl-pr { font-weight:600; white-space:nowrap; }
-.pricetab .wl-st { display:inline-flex; align-items:center; gap:.5em; font-size:.82rem; font-weight:600; white-space:nowrap; }
-.pricetab .wl-st::before { content:""; width:7px; height:7px; border-radius:50%; background:currentColor; }
-.pricetab .wl-st.ok { color:#40584a; } .pricetab .wl-st.sold { color:#9a6a66; }
-.pricetab .wl-ver { background:none; border:0; color:var(--accent); font-family:var(--sans); font-size:.82rem; font-weight:600; cursor:pointer; white-space:nowrap; }
-.pricetab .wl-ver:hover { text-decoration:underline; }
 
 /* WOOD — disponibilidad idéntica a la referencia */
 .theme-wood .fband { left:26.5%; width:30%; }
@@ -865,6 +950,7 @@ a.project { text-decoration:none; color:inherit; }
 .theme-wood .floor-chip .fn { font-family:var(--sans); font-weight:700; letter-spacing:0; }
 .theme-wood .floor-chip .fc { font-family:var(--sans); }
 .theme-wood .ad-fin .big, .theme-wood .ad-cash .big { font-family:var(--sans); font-weight:700; letter-spacing:0; }
+.theme-3df .ad-fin .big, .theme-3df .ad-cash .big { font-family:var(--sans); font-weight:700; letter-spacing:0; }
 .theme-wood .ad-fin { background:#40584a; }
 .theme-wood .ad-card .btn--solid { background:#40584a; color:#fff; border-color:#40584a; width:100%; justify-content:center; }
 .theme-wood .ad-card .btn--solid::after { background:#2f4234; }
@@ -883,3 +969,113 @@ a.project { text-decoration:none; color:inherit; }
 .theme-wood .ad-plan img { background:#40594a; }
 .theme-wood .ad-plan span { color:#fff; background:#40594a; border-top-color:rgba(255,255,255,.22); }
 @media (max-width:620px){ .ad-body{ grid-template-columns:1fr; } .theme-wood .avail__floors{ grid-template-columns:repeat(5,1fr);} }
+
+/* === FUENTES DE MARCA (inicio + 3DF) ===
+   Títulos → Harume Roman (fuente de marca). La Harume free NO tiene acentos/ñ,
+   así que en palabras con acento (Núñez, Ubicación, Tipologías, Solárium…) el
+   carácter acentuado cae en Italiana → hay una pequeña mezcla DENTRO de esas
+   palabras (decisión aceptada por la clienta, es temporal).
+   Con la Harume FULL (con acentos) desaparece la mezcla: reemplazar el
+   HarumeRoman.woff2 por la full y quitar Italiana del stack de --serif.
+   Cuerpo → Neue Montreal (versión free, completa con acentos/ñ, sin mezcla).
+   ⚠️ Ambas son "free for personal use": para el sitio en vivo hace falta
+   la licencia comercial/webfont de cada una. */
+@font-face {
+  font-family: "Harume Roman";
+  src: url("assets/fonts/HarumeRoman.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("assets/fonts/NeueMontreal-Light.woff2") format("woff2");
+  font-weight: 300; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("assets/fonts/NeueMontreal-Regular.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("assets/fonts/NeueMontreal-Semibold.woff2") format("woff2");
+  font-weight: 600; font-style: normal; font-display: swap;
+}
+.theme-brand, .theme-3df {
+  /* Secciones (h2, h3, h4): Marcellus (la más parecida a Harume) en may/minúscula. */
+  --serif: "Marcellus", "Italiana", "Cormorant Garamond", "Times New Roman", serif;
+  --sans:  "Neue Montreal", "Hanken Grotesk", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+/* Hero (títulos de impacto): Harume Roman, la fuente de marca. Es de caja alta
+   (solo mayúsculas, como el logo), así que va en uppercase y con más aire
+   (letter-spacing) para que no quede apretada. */
+.theme-brand h1, .theme-3df h1 {
+  font-family: "Marcellus", "Italiana", "Cormorant Garamond", "Times New Roman", serif;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+.theme-brand h1::first-letter, .theme-3df h1::first-letter {
+  font-family: "Harume Roman", "Italiana", serif;
+}
+/* Títulos de sección (h2/h3/h4): Marcellus limpio (legible y delicado), con
+   solo la PRIMERA LETRA en Harume como guiño de marca. La Harume fuerte queda
+   reservada a los heros. */
+.theme-brand h2, .theme-brand h3, .theme-brand h4,
+.theme-3df h2, .theme-3df h3, .theme-3df h4 {
+  font-family: var(--serif); font-weight: 400; letter-spacing: 0; text-transform: none;
+}
+.theme-brand h2::first-letter, .theme-brand h3::first-letter, .theme-brand h4::first-letter,
+.theme-3df h2::first-letter, .theme-3df h3::first-letter, .theme-3df h4::first-letter {
+  font-family: "Harume Roman", "Italiana", serif;
+}
+/* Acento sutil en títulos: una palabra en Cormorant itálica (la única cursiva de
+   acento del sitio, la misma de "Scrivendo il futuro"). */
+.theme-brand h2 em, .theme-brand h3 em,
+.theme-3df h2 em, .theme-3df h3 em {
+  font-family: "Cormorant Garamond", "Times New Roman", serif;
+  font-style: italic; font-weight: 500; color: var(--accent);
+}
+/* Hero de la home: may/minúscula (solo la inicial en mayúscula, en Harume) +
+   resto en Marcellus. "Scrivendo il futuro" en Cormorant itálica. */
+.hero--home h1 {
+  font-family: "Marcellus", "Italiana", serif;
+  text-transform: none; font-weight: 400;
+  font-size: clamp(2rem, 4.2vw, 3.6rem); line-height: 1.08; letter-spacing: .01em;
+}
+.hero--home h1::first-letter { font-family: "Harume Roman", "Italiana", serif; }
+.hero--home .pp-hero__loc {
+  font-family: "Cormorant Garamond", "Times New Roman", serif;
+  font-style: italic;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: clamp(1.2rem, 2.1vw, 1.7rem);
+  opacity: .95;
+}
+
+/* =======================================================================
+   === FUENTES DE MARCA (PENDIENTE) ===
+   Inicio + 3 de Febrero → Harume Roman (títulos) + Neue Montreal (cuerpo).
+   Inactivo hasta tener los archivos con licencia web/comercial.
+   Para activar: copiar los archivos en assets/fonts/, descomentar TODO
+   este bloque, ajustar nombres si difieren y subir ?v=N en las 3 páginas.
+   Requiere class="theme-brand" en el <body> de index.html (ya agregada).
+   ----------------------------------------------------------------------
+@font-face {
+  font-family: "Harume Roman";
+  src: url("assets/fonts/HarumeRoman.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("assets/fonts/NeueMontreal-Regular.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("assets/fonts/NeueMontreal-Medium.woff2") format("woff2");
+  font-weight: 500; font-style: normal; font-display: swap;
+}
+.theme-brand, .theme-3df {
+  --serif: "Harume Roman", "Cormorant Garamond", "Times New Roman", serif;
+  --sans:  "Neue Montreal", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+   ======================================================================= */
