@@ -1008,10 +1008,15 @@ a.project { text-decoration:none; color:inherit; }
 /* Hero (títulos de impacto): Harume Roman, la fuente de marca. Es de caja alta
    (solo mayúsculas, como el logo), así que va en uppercase y con más aire
    (letter-spacing) para que no quede apretada. */
-/* INICIO (theme-brand): títulos en Tenor Sans, limpia, como quintaglia.com. */
+/* INICIO (theme-brand): el hero va en Harume Roman (la fuente de marca, igual
+   que quintaglia.com), con ligaduras decorativas (dlig) para los remates/swash.
+   Harume es de caja alta y SIN acentos, por eso sólo va en títulos sin acento
+   (el hero). Los títulos de sección (muchos con acento: Innovación, próximos…)
+   quedan en Tenor Sans para no romper los glifos acentuados. */
 .theme-brand h1 {
-  font-family: "Tenor Sans", "Marcellus", "Italiana", serif;
-  text-transform: uppercase; letter-spacing: .05em;
+  font-family: "Harume Roman", "Marcellus", "Italiana", serif;
+  text-transform: uppercase; letter-spacing: 0;
+  font-feature-settings: "liga" 1, "dlig" 1;
 }
 .theme-brand h2, .theme-brand h3, .theme-brand h4 {
   font-family: "Tenor Sans", "Marcellus", "Italiana", serif;
@@ -1039,9 +1044,10 @@ a.project { text-decoration:none; color:inherit; }
 /* Hero de la home: may/minúscula (solo la inicial en mayúscula, en Harume) +
    resto en Marcellus. "Scrivendo il futuro" en Cormorant itálica. */
 .hero--home h1 {
-  font-family: "Tenor Sans", "Marcellus", "Italiana", serif;
+  font-family: "Harume Roman", "Marcellus", "Italiana", serif;
   text-transform: uppercase; font-weight: 400;
-  font-size: clamp(1.8rem, 3.8vw, 3.2rem); line-height: 1.16; letter-spacing: .05em;
+  font-size: clamp(2rem, 4.4vw, 3.8rem); line-height: 1.04; letter-spacing: 0;
+  font-feature-settings: "liga" 1, "dlig" 1;
 }
 .hero--home .pp-hero__loc {
   font-family: "Cormorant Garamond", "Times New Roman", serif;
