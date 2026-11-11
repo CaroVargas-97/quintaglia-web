@@ -1037,10 +1037,11 @@ a.project { text-decoration:none; color:inherit; }
 /* Hero de la home: may/minúscula (solo la inicial en mayúscula, en Harume) +
    resto en Marcellus. "Scrivendo il futuro" en Cormorant itálica. */
 .hero--home h1 {
-  font-family: "Harume Roman", "Italiana", serif;
-  text-transform: uppercase; font-weight: 400;
-  font-size: clamp(1.9rem, 4vw, 3.4rem); line-height: 1.14; letter-spacing: .04em;
+  font-family: "Marcellus", "Italiana", serif;
+  text-transform: none; font-weight: 400;
+  font-size: clamp(2rem, 4.2vw, 3.6rem); line-height: 1.08; letter-spacing: .01em;
 }
+.hero--home h1::first-letter { font-family: "Harume Roman", "Italiana", serif; }
 .hero--home .pp-hero__loc {
   font-family: "Cormorant Garamond", "Times New Roman", serif;
   font-style: italic;
