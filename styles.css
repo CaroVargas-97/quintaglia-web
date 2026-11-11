@@ -1008,22 +1008,24 @@ a.project { text-decoration:none; color:inherit; }
 /* Hero (títulos de impacto): Harume Roman, la fuente de marca. Es de caja alta
    (solo mayúsculas, como el logo), así que va en uppercase y con más aire
    (letter-spacing) para que no quede apretada. */
-.theme-brand h1, .theme-3df h1 {
+/* INICIO (theme-brand): títulos en Tenor Sans, limpia, como quintaglia.com. */
+.theme-brand h1 {
+  font-family: "Tenor Sans", "Marcellus", "Italiana", serif;
+  text-transform: uppercase; letter-spacing: .05em;
+}
+.theme-brand h2, .theme-brand h3, .theme-brand h4 {
+  font-family: "Tenor Sans", "Marcellus", "Italiana", serif;
+  font-weight: 400; letter-spacing: .01em; text-transform: none;
+}
+/* 3 DE FEBRERO (theme-3df): Marcellus con la inicial en Harume (sin cambios). */
+.theme-3df h1 {
   font-family: "Marcellus", "Italiana", "Cormorant Garamond", "Times New Roman", serif;
-  text-transform: uppercase;
-  letter-spacing: .08em;
+  text-transform: uppercase; letter-spacing: .08em;
 }
-.theme-brand h1::first-letter, .theme-3df h1::first-letter {
-  font-family: "Harume Roman", "Italiana", serif;
-}
-/* Títulos de sección (h2/h3/h4): Marcellus limpio (legible y delicado), con
-   solo la PRIMERA LETRA en Harume como guiño de marca. La Harume fuerte queda
-   reservada a los heros. */
-.theme-brand h2, .theme-brand h3, .theme-brand h4,
+.theme-3df h1::first-letter { font-family: "Harume Roman", "Italiana", serif; }
 .theme-3df h2, .theme-3df h3, .theme-3df h4 {
   font-family: var(--serif); font-weight: 400; letter-spacing: 0; text-transform: none;
 }
-.theme-brand h2::first-letter, .theme-brand h3::first-letter, .theme-brand h4::first-letter,
 .theme-3df h2::first-letter, .theme-3df h3::first-letter, .theme-3df h4::first-letter {
   font-family: "Harume Roman", "Italiana", serif;
 }
@@ -1037,11 +1039,10 @@ a.project { text-decoration:none; color:inherit; }
 /* Hero de la home: may/minúscula (solo la inicial en mayúscula, en Harume) +
    resto en Marcellus. "Scrivendo il futuro" en Cormorant itálica. */
 .hero--home h1 {
-  font-family: "Marcellus", "Italiana", serif;
-  text-transform: none; font-weight: 400;
-  font-size: clamp(2rem, 4.2vw, 3.6rem); line-height: 1.08; letter-spacing: .01em;
+  font-family: "Tenor Sans", "Marcellus", "Italiana", serif;
+  text-transform: uppercase; font-weight: 400;
+  font-size: clamp(1.8rem, 3.8vw, 3.2rem); line-height: 1.16; letter-spacing: .05em;
 }
-.hero--home h1::first-letter { font-family: "Harume Roman", "Italiana", serif; }
 .hero--home .pp-hero__loc {
   font-family: "Cormorant Garamond", "Times New Roman", serif;
   font-style: italic;
