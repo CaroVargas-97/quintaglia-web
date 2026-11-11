@@ -1046,8 +1046,9 @@ a.project { text-decoration:none; color:inherit; }
 .hero--home h1 {
   font-family: "Harume Roman", "Marcellus", "Italiana", serif;
   text-transform: uppercase; font-weight: 400;
-  font-size: clamp(2rem, 4.4vw, 3.8rem); line-height: 1.04; letter-spacing: 0;
+  font-size: clamp(2.4rem, 6.6vw, 5.4rem); line-height: 1.02; letter-spacing: 0;
   font-feature-settings: "liga" 1, "dlig" 1;
+  max-width: 14ch;
 }
 .hero--home .pp-hero__loc {
   font-family: "Cormorant Garamond", "Times New Roman", serif;
