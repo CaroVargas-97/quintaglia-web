@@ -1030,6 +1030,12 @@ a.project { text-decoration:none; color:inherit; }
    hero y que 3 de Febrero). El resto en Tenor Sans para respetar acentos/ñ. */
 .theme-brand h2::first-letter, .theme-brand h3::first-letter, .theme-brand h4::first-letter {
   font-family: "Harume Roman", "Italiana", serif;
+  font-size: 1.16em;
+}
+/* Excepción: títulos cuya inicial en Harume queda rara (ej. la "I" con swash) */
+.theme-brand .no-cap::first-letter {
+  font-family: inherit;
+  font-size: inherit;
 }
 /* 3 DE FEBRERO (theme-3df): Marcellus con la inicial en Harume (sin cambios). */
 .theme-3df h1 {
