@@ -1061,10 +1061,10 @@ a.project { text-decoration:none; color:inherit; }
    elegante con swashes sólo en algunas letras (A, R, Q), no grotesca. El texto no
    lleva acentos porque Harume no los tiene. */
 .hero--home h1 {
-  font-family: "Harume Roman", "Cormorant Garamond", "Italiana", serif;
+  font-family: "Tenor Sans", "Marcellus", "Italiana", sans-serif;
   font-style: italic;
   text-transform: uppercase; font-weight: 400;
-  font-size: clamp(2rem, 4.8vw, 3.3rem); line-height: 1.2; letter-spacing: .1em;
+  font-size: clamp(2rem, 4.8vw, 3.3rem); line-height: 1.2; letter-spacing: .09em;
   max-width: 24ch;
 }
 .hero--home .pp-hero__loc {
