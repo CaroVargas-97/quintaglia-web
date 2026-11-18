@@ -1060,12 +1060,16 @@ a.project { text-decoration:none; color:inherit; }
    pero renderizada en limpio (sin ligaduras dlig) y a tamaño moderado. Así se ve
    elegante con swashes sólo en algunas letras (A, R, Q), no grotesca. El texto no
    lleva acentos porque Harume no los tiene. */
+/* Hero: Harume itálica LIMPIA. El secreto de la referencia: el texto va en
+   MINÚSCULA y SIN text-transform. Harume es caja alta, pero sus glifos de
+   minúscula son los limpios (sin swashes); los de mayúscula son los swashy.
+   Por eso la frase va en minúscula en el HTML. */
 .hero--home h1 {
-  font-family: "Tenor Sans", "Marcellus", "Italiana", sans-serif;
+  font-family: "Harume Roman", "Cormorant Garamond", "Italiana", serif;
   font-style: italic;
-  text-transform: uppercase; font-weight: 400;
-  font-size: clamp(2rem, 4.8vw, 3.3rem); line-height: 1.2; letter-spacing: .09em;
-  max-width: 24ch;
+  text-transform: none; font-weight: 400;
+  font-size: clamp(2.1rem, 5vw, 3.5rem); line-height: 1.12; letter-spacing: .02em;
+  max-width: 22ch;
 }
 .hero--home .pp-hero__loc {
   font-family: "Cormorant Garamond", "Times New Roman", serif;
