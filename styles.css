@@ -1062,8 +1062,9 @@ a.project { text-decoration:none; color:inherit; }
    lleva acentos porque Harume no los tiene. */
 .hero--home h1 {
   font-family: "Harume Roman", "Cormorant Garamond", "Italiana", serif;
+  font-style: italic;
   text-transform: uppercase; font-weight: 400;
-  font-size: clamp(2.1rem, 5vw, 3.4rem); line-height: 1.08; letter-spacing: .01em;
+  font-size: clamp(2.1rem, 5vw, 3.4rem); line-height: 1.12; letter-spacing: .02em;
   max-width: 22ch;
 }
 .hero--home .pp-hero__loc {
