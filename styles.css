@@ -1050,8 +1050,8 @@ a.project { text-decoration:none; color:inherit; }
 .hero--home h1 {
   font-family: "Tenor Sans", "Marcellus", "Italiana", serif;
   text-transform: uppercase; font-weight: 400;
-  font-size: clamp(2.4rem, 6.6vw, 5.4rem); line-height: 1.06; letter-spacing: .01em;
-  max-width: 16ch;
+  font-size: clamp(2rem, 5.2vw, 4.2rem); line-height: 1.08; letter-spacing: .01em;
+  max-width: 18ch;
 }
 .hero--home .pp-hero__loc {
   font-family: "Cormorant Garamond", "Times New Roman", serif;
