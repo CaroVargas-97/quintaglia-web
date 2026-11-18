@@ -1026,6 +1026,11 @@ a.project { text-decoration:none; color:inherit; }
   font-family: "Tenor Sans", "Marcellus", "Italiana", serif;
   font-weight: 400; letter-spacing: .01em; text-transform: none;
 }
+/* Títulos de sección del inicio: primera letra en Harume (mismo sello que el
+   hero y que 3 de Febrero). El resto en Tenor Sans para respetar acentos/ñ. */
+.theme-brand h2::first-letter, .theme-brand h3::first-letter, .theme-brand h4::first-letter {
+  font-family: "Harume Roman", "Italiana", serif;
+}
 /* 3 DE FEBRERO (theme-3df): Marcellus con la inicial en Harume (sin cambios). */
 .theme-3df h1 {
   font-family: "Marcellus", "Italiana", "Cormorant Garamond", "Times New Roman", serif;
