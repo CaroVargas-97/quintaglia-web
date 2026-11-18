@@ -1056,19 +1056,15 @@ a.project { text-decoration:none; color:inherit; }
   font-family: "Cormorant Garamond", "Times New Roman", serif;
   font-style: italic; font-weight: 500; color: var(--accent);
 }
-/* Hero de la home: may/minúscula (solo la inicial en mayúscula, en Harume) +
-   resto en Marcellus. "Scrivendo il futuro" en Cormorant itálica. */
+/* Hero: método de la referencia (teamscaglia) → Harume Roman en TODO el título,
+   pero renderizada en limpio (sin ligaduras dlig) y a tamaño moderado. Así se ve
+   elegante con swashes sólo en algunas letras (A, R, Q), no grotesca. El texto no
+   lleva acentos porque Harume no los tiene. */
 .hero--home h1 {
-  font-family: "Tenor Sans", "Marcellus", "Italiana", serif;
+  font-family: "Harume Roman", "Cormorant Garamond", "Italiana", serif;
   text-transform: uppercase; font-weight: 400;
-  font-size: clamp(1.9rem, 4.6vw, 3.6rem); line-height: 1.18; letter-spacing: .05em;
-  max-width: 20ch;
-}
-/* Hero: base limpia (Tenor Sans) con la PRIMERA letra en Harume, como la
-   referencia (ESPACIOS → E ornamentada + resto limpio). Sin mezcla en el resto. */
-.hero--home h1::first-letter {
-  font-family: "Harume Roman", "Italiana", serif;
-  font-size: 1.08em;
+  font-size: clamp(2.1rem, 5vw, 3.4rem); line-height: 1.08; letter-spacing: .01em;
+  max-width: 22ch;
 }
 .hero--home .pp-hero__loc {
   font-family: "Cormorant Garamond", "Times New Roman", serif;
