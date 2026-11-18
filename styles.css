@@ -1008,15 +1008,19 @@ a.project { text-decoration:none; color:inherit; }
 /* Hero (títulos de impacto): Harume Roman, la fuente de marca. Es de caja alta
    (solo mayúsculas, como el logo), así que va en uppercase y con más aire
    (letter-spacing) para que no quede apretada. */
-/* INICIO (theme-brand): el hero va en Harume Roman (la fuente de marca, igual
-   que quintaglia.com), con ligaduras decorativas (dlig) para los remates/swash.
-   Harume es de caja alta y SIN acentos, por eso sólo va en títulos sin acento
-   (el hero). Los títulos de sección (muchos con acento: Innovación, próximos…)
-   quedan en Tenor Sans para no romper los glifos acentuados. */
+/* INICIO (theme-brand): títulos con LETRAS INTERCALADAS, igual que quintaglia.com.
+   La base es Marcellus (limpia, con acentos) y sólo algunas letras —las marcadas
+   con <span class="h">: A, R, Q, C, L— van en Harume Roman con su vuelo (dlig).
+   La .h va a 1.02em para igualar el alto de caja con Marcellus (sin el efecto de
+   "unas letras más grandes que otras"). */
 .theme-brand h1 {
-  font-family: "Harume Roman", "Marcellus", "Italiana", serif;
-  text-transform: uppercase; letter-spacing: 0;
+  font-family: "Tenor Sans", "Marcellus", "Italiana", serif;
+  text-transform: uppercase; letter-spacing: .01em;
+}
+.theme-brand h1 .h {
+  font-family: "Harume Roman", "Italiana", serif;
   font-feature-settings: "liga" 1, "dlig" 1;
+  font-size: 1.02em;
 }
 .theme-brand h2, .theme-brand h3, .theme-brand h4 {
   font-family: "Tenor Sans", "Marcellus", "Italiana", serif;
@@ -1044,11 +1048,10 @@ a.project { text-decoration:none; color:inherit; }
 /* Hero de la home: may/minúscula (solo la inicial en mayúscula, en Harume) +
    resto en Marcellus. "Scrivendo il futuro" en Cormorant itálica. */
 .hero--home h1 {
-  font-family: "Harume Roman", "Marcellus", "Italiana", serif;
+  font-family: "Tenor Sans", "Marcellus", "Italiana", serif;
   text-transform: uppercase; font-weight: 400;
-  font-size: clamp(2.4rem, 6.6vw, 5.4rem); line-height: 1.02; letter-spacing: 0;
-  font-feature-settings: "liga" 1, "dlig" 1;
-  max-width: 14ch;
+  font-size: clamp(2.4rem, 6.6vw, 5.4rem); line-height: 1.06; letter-spacing: .01em;
+  max-width: 16ch;
 }
 .hero--home .pp-hero__loc {
   font-family: "Cormorant Garamond", "Times New Roman", serif;
