@@ -738,9 +738,10 @@ a.project { text-decoration:none; color:inherit; }
 .pp-intro__wrap { display:grid; grid-template-columns:1fr 1fr; gap:clamp(2rem,6vw,5rem); align-items:center; }
 .pp-intro__wrap .pp-intro__img { margin-top:0; aspect-ratio:4/5; }
 .pp-intro__body .eyebrow { margin-bottom:1rem; display:inline-block; }
-.pp-intro__sub { font-family:"Harume Roman","Cormorant Garamond",serif; font-style:italic; font-weight:250;
-  font-size:clamp(1.3rem,2.6vw,2rem); color:var(--accent); margin:.1rem 0 1.5rem; letter-spacing:.02em;
-  font-feature-settings:"liga" 1,"dlig" 1,"calt" 1; text-transform:none; }
+/* Subtítulo "/ ...": Cormorant itálica (tiene acentos/ñ, p.ej. "Núñez"). */
+.pp-intro__sub { font-family:"Cormorant Garamond","Times New Roman",serif; font-style:italic; font-weight:500;
+  font-size:clamp(1.35rem,2.7vw,2.1rem); color:var(--accent); margin:.1rem 0 1.5rem; letter-spacing:.01em;
+  text-transform:none; }
 .pp-intro__body p { margin-bottom:1.1rem; }
 .pp-intro__body em { font-style:italic; }
 .pp-intro__link { font-family:var(--sans); font-size:.72rem; letter-spacing:.2em; text-transform:uppercase;
@@ -1047,6 +1048,13 @@ a.project { text-decoration:none; color:inherit; }
 .theme-3df h2, .theme-3df h3 {
   font-family: "Harume Roman", "Cormorant Garamond", "Italiana", serif;
   font-weight: 300; letter-spacing: .005em; text-transform: none;
+}
+/* Títulos con acento/ñ (.ta): Harume (free) no tiene acentos, así que van en
+   Marcellus —que sí los tiene— conservando la inicial en Harume. Con la Harume
+   comercial (con acentos) se podría unificar todo en Harume. */
+.theme-3df h2.ta, .theme-3df h3.ta {
+  font-family: "Marcellus", "Cormorant Garamond", "Times New Roman", serif;
+  font-weight: 400;
 }
 .theme-3df h4 {
   font-family: var(--serif); font-weight: 400; letter-spacing: 0; text-transform: none;
