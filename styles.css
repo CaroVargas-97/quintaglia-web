@@ -1044,9 +1044,12 @@ a.project { text-decoration:none; color:inherit; }
   text-transform: uppercase; letter-spacing: .08em;
 }
 .theme-3df h1::first-letter { font-family: "Harume Roman", "Italiana", serif; }
-.theme-3df h2, .theme-3df h3, .theme-3df h4 {
+.theme-3df h2, .theme-3df h3 {
   font-family: "Harume Roman", "Cormorant Garamond", "Italiana", serif;
   font-weight: 300; letter-spacing: .005em; text-transform: none;
+}
+.theme-3df h4 {
+  font-family: var(--serif); font-weight: 400; letter-spacing: 0; text-transform: none;
 }
 .theme-3df h2::first-letter, .theme-3df h3::first-letter, .theme-3df h4::first-letter {
   font-family: "Harume Roman", "Italiana", serif;
