@@ -738,8 +738,9 @@ a.project { text-decoration:none; color:inherit; }
 .pp-intro__wrap { display:grid; grid-template-columns:1fr 1fr; gap:clamp(2rem,6vw,5rem); align-items:center; }
 .pp-intro__wrap .pp-intro__img { margin-top:0; aspect-ratio:4/5; }
 .pp-intro__body .eyebrow { margin-bottom:1rem; display:inline-block; }
-.pp-intro__sub { font-family:"Cormorant Garamond","Times New Roman",serif; font-style:italic;
-  font-size:clamp(1.3rem,2.6vw,2rem); color:var(--accent); margin:-.2rem 0 1.5rem; letter-spacing:.01em; }
+.pp-intro__sub { font-family:"Harume Roman","Cormorant Garamond",serif; font-style:italic; font-weight:250;
+  font-size:clamp(1.3rem,2.6vw,2rem); color:var(--accent); margin:.1rem 0 1.5rem; letter-spacing:.02em;
+  font-feature-settings:"liga" 1,"dlig" 1,"calt" 1; text-transform:none; }
 .pp-intro__body p { margin-bottom:1.1rem; }
 .pp-intro__body em { font-style:italic; }
 .pp-intro__link { font-family:var(--sans); font-size:.72rem; letter-spacing:.2em; text-transform:uppercase;
@@ -1044,7 +1045,8 @@ a.project { text-decoration:none; color:inherit; }
 }
 .theme-3df h1::first-letter { font-family: "Harume Roman", "Italiana", serif; }
 .theme-3df h2, .theme-3df h3, .theme-3df h4 {
-  font-family: var(--serif); font-weight: 400; letter-spacing: 0; text-transform: none;
+  font-family: "Harume Roman", "Cormorant Garamond", "Italiana", serif;
+  font-weight: 300; letter-spacing: .005em; text-transform: none;
 }
 .theme-3df h2::first-letter, .theme-3df h3::first-letter, .theme-3df h4::first-letter {
   font-family: "Harume Roman", "Italiana", serif;
